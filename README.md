@@ -13,3 +13,6 @@
 - Used kubernetes cluster as the deployment environment to declaratively manage the resources and scale the application
 - Used kustomize for managing the kubernetes manifests, to separate the environment specific configurations and reuse the common configurations
 
+# Deliverables location
+- deployment resources: stored in the `deploy` folder
+- server log: stored in the root folder, `server.log`
