@@ -1,6 +1,5 @@
-# Block chain challenge
+# Block chain challenge Q1
 
-# Q1
 ## potential security improvement
 - Define network policy to allow only the necessary ports and protocols
 - Define kyverno policies to enforce pod security context and network policies
@@ -11,5 +10,6 @@
 - Periodically backup the efs data to s3 bucket
 
 ## design choices
-- Used EKS for kubernetes cluster as it is managed and easy to scale
-- Used kustomize for managing the kubernetes manifests, to make it easy to manage the resources
+- Used kubernetes cluster as the deployment environment to declaratively manage the resources and scale the application
+- Used kustomize for managing the kubernetes manifests, to separate the environment specific configurations and reuse the common configurations
+
