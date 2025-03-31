@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bc-challenge
+spec:
+  template:
+    spec:
+      containers:
+        - name: bc-challenge
+          volumeMounts:
+            - name: volumn-node-data
+              mountPath: /root/.chain-maind
+      volumes:
+        - name: volumn-node-data
+          persistentVolumeClaim:
+            claimName: bc-pv-claim

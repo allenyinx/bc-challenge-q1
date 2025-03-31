@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bc-challenge
+spec:
+  ports:
+    - name: rpc
+      port: 26657
+      targetPort: 26657
+    - name: api
+      port: 1317
+      targetPort: 1317
+  selector:
+    app: bc-challenge

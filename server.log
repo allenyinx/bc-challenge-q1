@@ -1,0 +1,640 @@
+7:49AM INF starting node with ABCI Tendermint in-process
+7:49AM INF service start impl=multiAppConn module=proxy msg={}
+7:49AM INF service start connection=query impl=localClient module=abci-client msg={}
+7:49AM INF service start connection=snapshot impl=localClient module=abci-client msg={}
+7:49AM INF service start connection=mempool impl=localClient module=abci-client msg={}
+7:49AM INF service start connection=consensus impl=localClient module=abci-client msg={}
+7:49AM INF service start impl=EventBus module=events msg={}
+7:49AM INF service start impl=PubSub module=pubsub msg={}
+7:49AM INF service start impl=IndexerService module=txindex msg={}
+7:49AM INF ABCI Handshake App Info hash="<Sv\x01�T\x1b#eS�\x06�r��#����\x1f\at6�h�iGNd" height=54 module=consensus protocol-version=0 software-version=4.2.14
+7:49AM INF ABCI Replay Blocks appHeight=54 module=consensus stateHeight=54 storeHeight=54
+7:49AM INF Completed ABCI Handshake - CometBFT and App are synced appHash="<Sv\x01�T\x1b#eS�\x06�r��#����\x1f\at6�h�iGNd" appHeight=54 module=consensus
+7:49AM INF Version info abci=0.17.0 block=11 cmtbft_version=0.34.35 commit_hash= p2p=8
+7:49AM INF This node is a validator addr=728AB7EE44976959A3A69585A9D4E34E50CC7E63 module=consensus pubKey=AIXLjiPsJoR/ERBmeT4y6HFsuCUOu8aQSLxqB366BuI=
+7:49AM INF P2P Node ID ID=6316173533d4e6e25429bbc98d1e66cd72c7ec31 file=/root/.chain-maind/config/node_key.json module=p2p
+7:49AM INF Adding persistent peers addrs=[] module=p2p
+7:49AM INF Adding unconditional peer ids ids=[] module=p2p
+7:49AM INF Add our address to book addr={"id":"6316173533d4e6e25429bbc98d1e66cd72c7ec31","ip":"0.0.0.0","port":26656} book=/root/.chain-maind/config/addrbook.json module=p2p
+7:49AM INF service start impl=Node msg={}
+7:49AM INF service start impl="P2P Switch" module=p2p msg={}
+7:49AM INF service start impl=PEX module=pex msg={}
+7:49AM INF service start book=/root/.chain-maind/config/addrbook.json impl=AddrBook module=p2p msg={}
+7:49AM INF Starting pprof server laddr=localhost:6060
+7:49AM INF serve module=rpc-server msg={}
+7:49AM INF service start impl=BlockchainReactor module=blockchain msg={}
+7:49AM INF service start impl=ConsensusReactor module=consensus msg={}
+7:49AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:49AM INF Reactor  module=consensus waitSync=false
+7:49AM INF No addresses to dial. Falling back to seeds module=pex
+7:49AM INF service start impl=ConsensusState module=consensus msg={}
+7:49AM INF service start impl=baseWAL module=consensus msg={} wal=/root/.chain-maind/data/cs.wal/wal
+7:49AM INF service start impl=Group module=consensus msg={} wal=/root/.chain-maind/data/cs.wal/wal
+7:49AM INF service start impl=TimeoutTicker module=consensus msg={}
+7:49AM INF Searching for height height=55 max=0 min=0 module=consensus wal=/root/.chain-maind/data/cs.wal/wal
+7:49AM INF Searching for height height=54 max=0 min=0 module=consensus wal=/root/.chain-maind/data/cs.wal/wal
+7:49AM INF Found height=54 index=0 module=consensus wal=/root/.chain-maind/data/cs.wal/wal
+7:49AM INF Catchup by replaying consensus messages height=55 module=consensus
+7:49AM INF Replay: New Step height=55 module=consensus round=0 step=RoundStepNewHeight
+7:49AM INF Replay: Done module=consensus
+7:49AM INF service start impl=Evidence module=evidence msg={}
+7:49AM INF service start impl=StateSync module=statesync msg={}
+7:49AM INF Saving AddrBook to file book=/root/.chain-maind/config/addrbook.json module=p2p size=0
+7:49AM INF Timed out dur=2948.022 height=55 module=consensus round=0 step=1
+7:49AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4D31ABA20DA6D0E06791AAF45EAF547C39A775FB41F2541F3F8C409D8C70398D","parts":{"hash":"ECA0B99B4681422EC17A73D9A67D24BE44167BCF4C4CD7E8F70ED90BEF24B557","total":1}},"height":55,"pol_round":-1,"round":0,"signature":"sAMKDBFlV1U85dT4JZQnBM6Pz0cqs+DXHKqmuc1EL7rzuHamRvnAeA4aQUROz64ruolHTK+oVvhirh5OVM7/BA==","timestamp":"2025-03-30T07:49:46.29828Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:49AM INF received complete proposal block hash=4D31ABA20DA6D0E06791AAF45EAF547C39A775FB41F2541F3F8C409D8C70398D height=55 module=consensus
+7:49AM INF finalizing commit of block hash={} height=55 module=consensus num_txs=0 root=3C537601DD541B236553BC06C472C9FE2385DBCBC41F077436FA689B69474E64
+7:49AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:49AM INF executed block height=55 module=state num_invalid_txs=0 num_valid_txs=0
+7:49AM INF commit synced commit=436F6D6D697449447B5B32323720313833203232312035203936203439203235352032323120313134203138342032322032343920353520343620342031303720353820313830203234312031383220313720373720313030203231372032303520313620313320343320373120313533203520365D3A33377D
+7:49AM INF committed state app_hash=E3B7DD056031FFDD72B816F9372E046B3AB4F1B6114D64D9CD100D2B47990506 height=55 module=state num_txs=0
+7:49AM INF indexed block events height=55 module=txindex
+7:49AM INF Timed out dur=2951.82 height=56 module=consensus round=0 step=1
+7:49AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5D5EB96F8BEAE9BC4F64D3EEE70A968B7D79BE5F1C9F3C156908559A2215EF88","parts":{"hash":"F7450570CE04258861F1A2377EE3F26F376ED1394B7017C334FB5B2005B24B03","total":1}},"height":56,"pol_round":-1,"round":0,"signature":"t/KAwmOvHeYsjAVSKQUC3890+XkELCcORJPhEpxsalYsVPbIobsjwrN3vd3WPNOXmQ0Sl8kmM/6CkW5dc0XBBA==","timestamp":"2025-03-30T07:49:49.393208Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:49AM INF received complete proposal block hash=5D5EB96F8BEAE9BC4F64D3EEE70A968B7D79BE5F1C9F3C156908559A2215EF88 height=56 module=consensus
+7:49AM INF finalizing commit of block hash={} height=56 module=consensus num_txs=0 root=E3B7DD056031FFDD72B816F9372E046B3AB4F1B6114D64D9CD100D2B47990506
+7:49AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:49AM INF executed block height=56 module=state num_invalid_txs=0 num_valid_txs=0
+7:49AM INF commit synced commit=436F6D6D697449447B5B333520323038203139352031393220323530203936203133332032313320383920343020353020383320383720323235203930203135203133382034203936203138372031343120343120323331203231332032323820313639203133312031343520313132203439203837203138345D3A33387D
+7:49AM INF committed state app_hash=23D0C3C0FA6085D55928325357E15A0F8A0460BB8D29E7D5E4A98391703157B8 height=56 module=state num_txs=0
+7:49AM INF indexed block events height=56 module=txindex
+7:49AM INF Timed out dur=2958.818 height=57 module=consensus round=0 step=1
+7:49AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"0A9A0190E0BF1F792E655EE3ADABCCB49F149CF24EC334E660A3A2E97E18EF99","parts":{"hash":"B61205525273AB8A83C0BE7BEB0E8059D7B82D3DFCB8B8C8661115EE39076F48","total":1}},"height":57,"pol_round":-1,"round":0,"signature":"es2ngyETI0bPOHUl96Vf6U5+fSHk7hFKyulii2gnK0ZnxzoOtWWQqftBx2oj3genvIze8WgRtbJP6gKj7evuCQ==","timestamp":"2025-03-30T07:49:52.477232Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:49AM INF received complete proposal block hash=0A9A0190E0BF1F792E655EE3ADABCCB49F149CF24EC334E660A3A2E97E18EF99 height=57 module=consensus
+7:49AM INF finalizing commit of block hash={} height=57 module=consensus num_txs=0 root=23D0C3C0FA6085D55928325357E15A0F8A0460BB8D29E7D5E4A98391703157B8
+7:49AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:49AM INF executed block height=57 module=state num_invalid_txs=0 num_valid_txs=0
+7:49AM INF commit synced commit=436F6D6D697449447B5B3732203930203133392039342037312035382036392031343820313032203138342033392033332039362031393420313231203233312031363720313639203139372031343020323020363820393220313431203133203935203135342031353420313637203538203137302035385D3A33397D
+7:49AM INF committed state app_hash=485A8B5E473A459466B8272160C279E7A7A9C58C14445C8D0D5F9A9AA73AAA3A height=57 module=state num_txs=0
+7:49AM INF indexed block events height=57 module=txindex
+7:49AM INF Timed out dur=2966.047 height=58 module=consensus round=0 step=1
+7:49AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5CA2ACAC9AFE46AEA20A8654CDAB24AEB4B0499742298F97A5EA18DE04E76744","parts":{"hash":"B5D4D7DEABC21C894ECC2A3E1EDC7353B33774EB986FEFBA57368ADCE73FDC22","total":1}},"height":58,"pol_round":-1,"round":0,"signature":"TYCaYwhoKNUQsbDve24hwvVL8ST9kXWWy4sC7hsuPsyXdwCBckzehWIyok4DHO3v+rS9G+uNvgCp5vtfR17sCA==","timestamp":"2025-03-30T07:49:55.568553Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:49AM INF received complete proposal block hash=5CA2ACAC9AFE46AEA20A8654CDAB24AEB4B0499742298F97A5EA18DE04E76744 height=58 module=consensus
+7:49AM INF finalizing commit of block hash={} height=58 module=consensus num_txs=0 root=485A8B5E473A459466B8272160C279E7A7A9C58C14445C8D0D5F9A9AA73AAA3A
+7:49AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:49AM INF executed block height=58 module=state num_invalid_txs=0 num_valid_txs=0
+7:49AM INF commit synced commit=436F6D6D697449447B5B32333020313139203133332031203134332038322031343220363920333620333720323337203332203231392031383220313837203134392031332031363120343920313134203138382032352031373020302032303920363220313631203935203832203136203232372034375D3A33417D
+7:49AM INF committed state app_hash=E67785018F528E452425ED20DBB6BB950DA13172BC19AA00D13EA15F5210E32F height=58 module=state num_txs=0
+7:49AM INF indexed block events height=58 module=txindex
+7:49AM INF Timed out dur=2953.727 height=59 module=consensus round=0 step=1
+7:49AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BC15730FF90352FFBADFE5646D970FA9C9C451E471457D0FF6B40871CE8A8604","parts":{"hash":"31E0EE417944C8A7A5FBE8A153FF0FDCF1EA9D8196A6522B3877DBE7F3454AC7","total":1}},"height":59,"pol_round":-1,"round":0,"signature":"r8yb5PJy0gKL6kpga6DerpQiK4q5d9B83Q09NURDBs0TBP/zvPdDUJK8LbwuNYi2hgk5e8x7YWfNVdBj/9LDDw==","timestamp":"2025-03-30T07:49:58.656464Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:49AM INF received complete proposal block hash=BC15730FF90352FFBADFE5646D970FA9C9C451E471457D0FF6B40871CE8A8604 height=59 module=consensus
+7:49AM INF finalizing commit of block hash={} height=59 module=consensus num_txs=0 root=E67785018F528E452425ED20DBB6BB950DA13172BC19AA00D13EA15F5210E32F
+7:49AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:49AM INF executed block height=59 module=state num_invalid_txs=0 num_valid_txs=0
+7:49AM INF commit synced commit=436F6D6D697449447B5B32323020333420323139203338203139342038362031313720353920313036203937203138392031383020322032313120383720363820323034203532203130302032353020363120323333203133352031363120313234203332203132372031313520323520323438203131392031375D3A33427D
+7:49AM INF committed state app_hash=DC22DB26C256753B6A61BDB402D35744CC3464FA3DE987A17C207F7319F87711 height=59 module=state num_txs=0
+7:49AM INF indexed block events height=59 module=txindex
+7:50AM INF Timed out dur=2969.343 height=60 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"70176B03FCC6D0B337AEFE8F6E973192A5002F47C0401ED2F81BC0933EAAF165","parts":{"hash":"9273D279BD4860DAB7032E9A51B79998D68CD71D74A3ABCA4997DF5AC1ABF5C8","total":1}},"height":60,"pol_round":-1,"round":0,"signature":"L0vycpDdgl388l4axeHA2mfiKAnthBYcbw4XYKION+Harxj0xoa9odkzAVwL+SXg2ceOAV8L43UIDsrzqzpdBg==","timestamp":"2025-03-30T07:50:01.736605Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=70176B03FCC6D0B337AEFE8F6E973192A5002F47C0401ED2F81BC0933EAAF165 height=60 module=consensus
+7:50AM INF finalizing commit of block hash={} height=60 module=consensus num_txs=0 root=DC22DB26C256753B6A61BDB402D35744CC3464FA3DE987A17C207F7319F87711
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=60 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B3931203232332032303420323032203231342034332039203220323331203934203134322039392031343620353920313236203231352031203230352031323520313737203230342031373520313930203220313034203136332032313720363720313834203420313837203139345D3A33437D
+7:50AM INF committed state app_hash=5BDFCCCAD62B0902E75E8E63923B7ED701CD7DB1CCAFBE0268A3D943B804BBC2 height=60 module=state num_txs=0
+7:50AM INF indexed block events height=60 module=txindex
+7:50AM INF Timed out dur=2965.085 height=61 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"10ED0CF2C81821001FC6978D590C15BEAB09485CA5CF2913F50411BE40A6415E","parts":{"hash":"CD0C2B6C299E6A3C009E58BBD14462BAB9BD92D265C3B8D90AA33A0C0D90A6A6","total":1}},"height":61,"pol_round":-1,"round":0,"signature":"505zdO9/Q4wvGsNI1nWJ8ATEJFP9GoAm+8DydVzX5ihMPAHw13If+X7Ftutxtwi5LREsZBL/JPe5RdUkHYHxBA==","timestamp":"2025-03-30T07:50:04.822796Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=10ED0CF2C81821001FC6978D590C15BEAB09485CA5CF2913F50411BE40A6415E height=61 module=consensus
+7:50AM INF finalizing commit of block hash={} height=61 module=consensus num_txs=0 root=5BDFCCCAD62B0902E75E8E63923B7ED701CD7DB1CCAFBE0268A3D943B804BBC2
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=61 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B323435203930203135362032353020323133203234312033362031373120313331203931203133392032323820373820313532203131203538203437203233392031363520323034203736203130302031342032323120313136203837203231312037372037362032313820323231203231335D3A33447D
+7:50AM INF committed state app_hash=F55A9CFAD5F124AB835B8BE44E980B3A2FEFA5CC4C640EDD7457D34D4CDADDD5 height=61 module=state num_txs=0
+7:50AM INF indexed block events height=61 module=txindex
+7:50AM INF Timed out dur=2970.253 height=62 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"116B0E7F27AEF3600797DC4411232FA0A9B8FB6844CF188DA188EEF35DF0727C","parts":{"hash":"AB0BA202A7F4C86EDFB1636BD93B6677DBCAF857DF88BFE886F70BCF87915066","total":1}},"height":62,"pol_round":-1,"round":0,"signature":"okakAUaDH4VVlpAO0/+5n/iAUvYml4xkilOpal3YOI/6hqn1ucRmLeFhxv0yqaLbWK7DHi0ymDMZ/JJeMs74BQ==","timestamp":"2025-03-30T07:50:07.886544Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=116B0E7F27AEF3600797DC4411232FA0A9B8FB6844CF188DA188EEF35DF0727C height=62 module=consensus
+7:50AM INF finalizing commit of block hash={} height=62 module=consensus num_txs=0 root=F55A9CFAD5F124AB835B8BE44E980B3A2FEFA5CC4C640EDD7457D34D4CDADDD5
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=62 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B3130302038392031323020323237203139342038372031313820393920323139203231392038203130322031353120313732203520332031333520393320373220313336203233302032353520313535203138322031313520313136203434203134342031323320373320323338203234325D3A33457D
+7:50AM INF committed state app_hash=645978E3C2577663DBDB086697AC0503875D4888E6FF9BB673742C907B49EEF2 height=62 module=state num_txs=0
+7:50AM INF indexed block events height=62 module=txindex
+7:50AM INF Timed out dur=2967.428 height=63 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"249BC879E6BF990FE6D483C586C418468C1819A8480536A7C9176E046435E55F","parts":{"hash":"C4F98EAFFAE702A82B2CA21E6E86628C10CBC0A040561D1281A763129E914B85","total":1}},"height":63,"pol_round":-1,"round":0,"signature":"R/BEnk/as05T6aqpqVIra7D+aSQe00BFfblFv+VB9sLWl6+kkWGGrhffqlucoWUDhqIFMhkud4bcyGUjlIk0DQ==","timestamp":"2025-03-30T07:50:10.976946Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=249BC879E6BF990FE6D483C586C418468C1819A8480536A7C9176E046435E55F height=63 module=consensus
+7:50AM INF finalizing commit of block hash={} height=63 module=consensus num_txs=0 root=645978E3C2577663DBDB086697AC0503875D4888E6FF9BB673742C907B49EEF2
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=63 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B31383720392031382032323420363520313837203320342036203136372032353520323020313239203232362031323020343220313631203233352033362032303420313436203136302031323720323533203233322031373120313437203132302031303020313932203438203135305D3A33467D
+7:50AM INF committed state app_hash=BB0912E041BB030406A7FF1481E2782AA1EB24CC92A07FFDE8AB937864C03096 height=63 module=state num_txs=0
+7:50AM INF indexed block events height=63 module=txindex
+7:50AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:50AM INF No addresses to dial. Falling back to seeds module=pex
+7:50AM INF Timed out dur=2964.987 height=64 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9546F724D7B14C84FAFB700D9C6B92A2B96645AF54DC2B169FD36523B7DF0C16","parts":{"hash":"B93B4896BB9BDEDD5E227E23CD8B73CC8719FC48023144063BCCD70EA4748315","total":1}},"height":64,"pol_round":-1,"round":0,"signature":"xQ8BK4fODkqN5MBaKA1v0v/nbyvEEodN/S0LWMpsKw1/VMPp/vrKXSFPXiDe+rzaLC8+0ticMi8ZAPC3dRg1DQ==","timestamp":"2025-03-30T07:50:14.048934Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=9546F724D7B14C84FAFB700D9C6B92A2B96645AF54DC2B169FD36523B7DF0C16 height=64 module=consensus
+7:50AM INF finalizing commit of block hash={} height=64 module=consensus num_txs=0 root=BB0912E041BB030406A7FF1481E2782AA1EB24CC92A07FFDE8AB937864C03096
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=64 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B3636203130203135392031343120313433203234392032333620313832203136342032313220323239203734203936203632203134322033352032303420323138203131322032313020313920333720312032303420323332203230352032343620362032343820323139203232203137385D3A34307D
+7:50AM INF committed state app_hash=420A9F8D8FF9ECB6A4D4E54A603E8E23CCDA70D2132501CCE8CDF606F8DB16B2 height=64 module=state num_txs=0
+7:50AM INF indexed block events height=64 module=txindex
+7:50AM INF Timed out dur=2966.322 height=65 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"D4436FEA4BDCA08D149F2CA0BE55E40F107325483251E75D64A781F69A4B5C57","parts":{"hash":"EEECBE07D54EB99E7320D549678B3A6D105B5566C4E4B4F1E732555B884035F8","total":1}},"height":65,"pol_round":-1,"round":0,"signature":"KdUtk1aorgm9JdKKc4A0f+Mmf3TJLzkJaKrtQt/LFcXhp4Z6WYCJ6qTYVqjCHeZZIVSra7js7IukYGbejEWPBg==","timestamp":"2025-03-30T07:50:17.138448Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=D4436FEA4BDCA08D149F2CA0BE55E40F107325483251E75D64A781F69A4B5C57 height=65 module=consensus
+7:50AM INF finalizing commit of block hash={} height=65 module=consensus num_txs=0 root=420A9F8D8FF9ECB6A4D4E54A603E8E23CCDA70D2132501CCE8CDF606F8DB16B2
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=65 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B3134372035352031382032333220313235203133392031313220333020393820313732203435203837203132392037332031313520313337203132382031313120393920313639203133372032313320313837203638203233312031392037203233322031383720323433203230392039305D3A34317D
+7:50AM INF committed state app_hash=933712E87D8B701E62AC2D5781497389806F63A989D5BB44E71307E8BBF3D15A height=65 module=state num_txs=0
+7:50AM INF indexed block events height=65 module=txindex
+7:50AM INF Timed out dur=2957.69 height=66 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3BF9C7790EE0759A49414A193678ED72F073D2FC38DED1DF7F1E19CF39F6B971","parts":{"hash":"94F90C58BDB5CA25B8AAC83769909703E186B1A159B49B0C4BC4344A55E380EF","total":1}},"height":66,"pol_round":-1,"round":0,"signature":"o5qexm0OErLh9rsjksrFYLc1E74vhjSUZivbe+Hv4yhgjhDO8PuXWYToMTMDezTWgzmUacr4ZvW5Y9g1cl6UAw==","timestamp":"2025-03-30T07:50:20.204194Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=3BF9C7790EE0759A49414A193678ED72F073D2FC38DED1DF7F1E19CF39F6B971 height=66 module=consensus
+7:50AM INF finalizing commit of block hash={} height=66 module=consensus num_txs=0 root=933712E87D8B701E62AC2D5781497389806F63A989D5BB44E71307E8BBF3D15A
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=66 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B323820313231203139302032323620333220363120313834203133302038382031353520323237203233352032313820313730203536203434203437203831203230382038322031333620333320323131203320323138203233302031383820323233203132332031303120323137203234375D3A34327D
+7:50AM INF committed state app_hash=1C79BEE2203DB882589BE3EBDAAA382C2F51D0528821D303DAE6BCDF7B65D9F7 height=66 module=state num_txs=0
+7:50AM INF indexed block events height=66 module=txindex
+7:50AM INF Timed out dur=2962.407 height=67 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BED011A33CF6C2655C7A320A324E6FDE9E8082BEE140F0F57B15670292411090","parts":{"hash":"8C93996719F45FE5A3305B3F4FB63704144A40821B3C24A3D542BE15445998C2","total":1}},"height":67,"pol_round":-1,"round":0,"signature":"NO8qyUTTJUkj340t+K0D8dGT6kti9jG00qtpFzoqD9w8ZDhsUmX88ycm+/GYtsVUeVi1VPuaKQcLxtWFFOFQDQ==","timestamp":"2025-03-30T07:50:23.289668Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=BED011A33CF6C2655C7A320A324E6FDE9E8082BEE140F0F57B15670292411090 height=67 module=consensus
+7:50AM INF finalizing commit of block hash={} height=67 module=consensus num_txs=0 root=1C79BEE2203DB882589BE3EBDAAA382C2F51D0528821D303DAE6BCDF7B65D9F7
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=67 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B323339203234312031313520313434203131352031313320313934203233322035372032323820373920323920313934203337203733203231392032313220313136203135332037312039382031323620353920353820313720313920313930203432203136352032353220313631203138335D3A34337D
+7:50AM INF committed state app_hash=EFF173907371C2E839E44F1DC22549DBD4749947627E3B3A1113BE2AA5FCA1B7 height=67 module=state num_txs=0
+7:50AM INF indexed block events height=67 module=txindex
+7:50AM INF Timed out dur=2966.605 height=68 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9D34C4C90435D20668171F4B6232D7657F99AC4C4CB09C17FC34A17610142F9C","parts":{"hash":"4AD4D59397CAA46F3549DF2D5B74450EC6CC662BFF28CAD1A718CB5903478D78","total":1}},"height":68,"pol_round":-1,"round":0,"signature":"Oeoh4Uy0MFIpaPQXd3u8Hjor7oNfySX7M/EAMqfjyMxGkdXQuQv8EQYN5o5aDRSjf78gZgLBW37taMEQ8zW6AQ==","timestamp":"2025-03-30T07:50:26.37539Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=9D34C4C90435D20668171F4B6232D7657F99AC4C4CB09C17FC34A17610142F9C height=68 module=consensus
+7:50AM INF finalizing commit of block hash={} height=68 module=consensus num_txs=0 root=EFF173907371C2E839E44F1DC22549DBD4749947627E3B3A1113BE2AA5FCA1B7
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=68 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B36352038203231372031303320323235203536203233342031362031363020313232203833203130342032313420313720393120313536203533203132203135342037342031373020392034372031303120313620312031343620353920323033203235332037312039305D3A34347D
+7:50AM INF committed state app_hash=4108D967E138EA10A07A5368D6115B9C350C9A4AAA092F651001923BCBFD475A height=68 module=state num_txs=0
+7:50AM INF indexed block events height=68 module=txindex
+7:50AM INF Timed out dur=2953.81 height=69 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E7D5B45CFDAC9EDFA0D63F9C4FF4974319B5A7C04F72C9F1905824B6EFE0DE2A","parts":{"hash":"EC5205FB0044B82F76064D65C130CD2D54D3F7E4A69CD0E2A2FED6397F5D9721","total":1}},"height":69,"pol_round":-1,"round":0,"signature":"w5kn0NLfQVwlm2yT+TRPsKLaMHSlxbf1yMpTZOwF91aneV6pIA89Y4l+voFO3BQRqW6hg5GV63f1PoPoUZYBAA==","timestamp":"2025-03-30T07:50:29.437115Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=E7D5B45CFDAC9EDFA0D63F9C4FF4974319B5A7C04F72C9F1905824B6EFE0DE2A height=69 module=consensus
+7:50AM INF finalizing commit of block hash={} height=69 module=consensus num_txs=0 root=4108D967E138EA10A07A5368D6115B9C350C9A4AAA092F651001923BCBFD475A
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=69 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B323435203139342038362031313120313731203130372035322034342031313220313830203139392032313320353520323130203138322031383520313830203235302032333120343220313132203232322033342037332037382031323920313931203336203231352032313120323432203131375D3A34357D
+7:50AM INF committed state app_hash=F5C2566FAB6B342C70B4C7D537D2B6B9B4FAE72A70DE22494E81BF24D7D3F275 height=69 module=state num_txs=0
+7:50AM INF indexed block events height=69 module=txindex
+7:50AM INF Timed out dur=2962.735 height=70 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"CA0B08B36379D78B0CF2EAD9D1D19CFA148AD86988F087F4E2340DAE5136A964","parts":{"hash":"C4A4E51E893219812F3C0158E27A5A770BEDCB4CCDE4814FCF62D71B8BA425AA","total":1}},"height":70,"pol_round":-1,"round":0,"signature":"o1ct6BVlQNhb1Q/VWGIwTEyjTcB1Um9c/NqaqOK0EWn+62Wtgf7Dl1PP5tGGii5qRiG/YL75xdtUXmU/G5hNBw==","timestamp":"2025-03-30T07:50:32.528267Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=CA0B08B36379D78B0CF2EAD9D1D19CFA148AD86988F087F4E2340DAE5136A964 height=70 module=consensus
+7:50AM INF finalizing commit of block hash={} height=70 module=consensus num_txs=0 root=F5C2566FAB6B342C70B4C7D537D2B6B9B4FAE72A70DE22494E81BF24D7D3F275
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=70 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B3234312032313920323137203131352031313920333520323433203230312039362032362032382034322038342031373620313833203231322032323720343820313539203134352034322032303820313530203231332032303620313631203232352031343820362031313920313936203130385D3A34367D
+7:50AM INF committed state app_hash=F1DBD9737723F3C9601A1C2A54B0B7D4E3309F912AD096D5CEA1E1940677C46C height=70 module=state num_txs=0
+7:50AM INF indexed block events height=70 module=txindex
+7:50AM INF Timed out dur=2958.487 height=71 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"F104BE1063A64A77874140F9B2E6E8D5E719B4151E247664B15651C2A4435F68","parts":{"hash":"29F15A9F2139917C581DCB0D712EA9F7F6F38E04B6EFE0EC6D7C2B1B6CBD9A1E","total":1}},"height":71,"pol_round":-1,"round":0,"signature":"FwsE5gJ+oeXl+xs5bduMQDyi9IVaRaszfiZXSG3+lL6Nj1l5lJ0GCbbft1BjQR3iu083Fyaag4cP7OgyQMAlCQ==","timestamp":"2025-03-30T07:50:35.6123Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=F104BE1063A64A77874140F9B2E6E8D5E719B4151E247664B15651C2A4435F68 height=71 module=consensus
+7:50AM INF finalizing commit of block hash={} height=71 module=consensus num_txs=0 root=F1DBD9737723F3C9601A1C2A54B0B7D4E3309F912AD096D5CEA1E1940677C46C
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=71 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B323137203432203139312031353820323431203234332031373720333020323336203230372031323220383420313220353320313231203232203131382039332031373720313239203132322032322032313120323239203139382032362032333120343320323236203138322038352038355D3A34377D
+7:50AM INF committed state app_hash=D92ABF9EF1F3B11EECCF7A540C357916765DB1817A16D3E5C61AE72BE2B65555 height=71 module=state num_txs=0
+7:50AM INF indexed block events height=71 module=txindex
+7:50AM INF Timed out dur=2960.154 height=72 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"38C9059BCEB0083629A663073F8D2DEB4623F393593EFF6AA4EC72EDD442ADEB","parts":{"hash":"E1EF54DC095A5478E8714FEAD86BC1C58DE99BC7313EB0B22A38764FBFC4E09C","total":1}},"height":72,"pol_round":-1,"round":0,"signature":"DX475klT+wSvOixUcSW966Vywl2qG0mRJkbQms0ZGeYdbbY1IrdgbdJVW6XceRBbmuCeLC0+QC6blIMojVtZAQ==","timestamp":"2025-03-30T07:50:38.689525Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=38C9059BCEB0083629A663073F8D2DEB4623F393593EFF6AA4EC72EDD442ADEB height=72 module=consensus
+7:50AM INF finalizing commit of block hash={} height=72 module=consensus num_txs=0 root=D92ABF9EF1F3B11EECCF7A540C357916765DB1817A16D3E5C61AE72BE2B65555
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=72 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B362036382039342032392038362031383720323034203139362032333320323439203635203736203234382031333020323137203633203136322031363420363320313439203234382032392034302037312031303220323235203130362036392032333920313934203232312036335D3A34387D
+7:50AM INF committed state app_hash=06445E1D56BBCCC4E9F9414CF882D93FA2A43F95F81D284766E16A45EFC2DD3F height=72 module=state num_txs=0
+7:50AM INF indexed block events height=72 module=txindex
+7:50AM INF Timed out dur=2956.33 height=73 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4F573C7654A80D6303272930D07707251FDF6A5A98A705220045C8828858077E","parts":{"hash":"A4E583AF7B7F9EEE4D5018DCF933736194B6E585B6F0F262E4CB9A1E0D79DE49","total":1}},"height":73,"pol_round":-1,"round":0,"signature":"+N1SNbheK4qCmWkpb+7peweskfRMmDuQag09eIIx3k0Jbsn1Y7fmpa3ZFqt/5zEXmCqNLlPeOa5CrBFvXEnpCQ==","timestamp":"2025-03-30T07:50:41.761925Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=4F573C7654A80D6303272930D07707251FDF6A5A98A705220045C8828858077E height=73 module=consensus
+7:50AM INF finalizing commit of block hash={} height=73 module=consensus num_txs=0 root=06445E1D56BBCCC4E9F9414CF882D93FA2A43F95F81D284766E16A45EFC2DD3F
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=73 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B39302031393620313434203232352036302034392036372035322037322031353320313035203730203131302031323520313230203530203638203134203231382036352031383520392033332032343720333620323036203130362035302032323420323334203230322036385D3A34397D
+7:50AM INF committed state app_hash=5AC490E13C314334489969466E7D7832440EDA41B90921F724CE6A32E0EACA44 height=73 module=state num_txs=0
+7:50AM INF indexed block events height=73 module=txindex
+7:50AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:50AM INF No addresses to dial. Falling back to seeds module=pex
+7:50AM INF Timed out dur=2962.544 height=74 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"0D488A79C0817221CF3E25FA0EEE805BAD5E505EA95C10F206926B0F28327D1A","parts":{"hash":"E6F408DF4A635E4FBC163B6771189B8608B0FB442A52DF4498840C1F6EE78B1D","total":1}},"height":74,"pol_round":-1,"round":0,"signature":"pwub3EV+tUpMl6MZCYhldGjmLMJl2hsJN1K/gwsJpsmZTJP2GHKTqBnq6HYx2bVRiuSuqjaK30almEynx6bxBg==","timestamp":"2025-03-30T07:50:44.842512Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=0D488A79C0817221CF3E25FA0EEE805BAD5E505EA95C10F206926B0F28327D1A height=74 module=consensus
+7:50AM INF finalizing commit of block hash={} height=74 module=consensus num_txs=0 root=5AC490E13C314334489969466E7D7832440EDA41B90921F724CE6A32E0EACA44
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=74 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B343720323032203231322031393620323432203620323336203330203136392032353320333220313230203939203638203138203232392031333620313236203232332039352031353320353120333320313237203020313630203133342031353420313036203135342036372036315D3A34417D
+7:50AM INF committed state app_hash=2FCAD4C4F206EC1EA9FD2078634412E5887EDF5F9933217F00A0869A6A9A433D height=74 module=state num_txs=0
+7:50AM INF indexed block events height=74 module=txindex
+7:50AM INF Timed out dur=2964.518 height=75 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"F176839A339201FD05ED398BC02C31BB89443B5C2396BA5346CF1A7F10E2BD17","parts":{"hash":"C51493BF953E60563BB409774109CFC614F4CF3FCE0DE39BCA31350546A8522E","total":1}},"height":75,"pol_round":-1,"round":0,"signature":"BxEttoJdZE5n1nwkI74ZPEdCxmNaA+yRsDelqptFBH4aAXHuJUnl7EaS7d5ZzgCDbFPO+Wjmci+fu3OB8GOKCw==","timestamp":"2025-03-30T07:50:47.919517Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=F176839A339201FD05ED398BC02C31BB89443B5C2396BA5346CF1A7F10E2BD17 height=75 module=consensus
+7:50AM INF finalizing commit of block hash={} height=75 module=consensus num_txs=0 root=2FCAD4C4F206EC1EA9FD2078634412E5887EDF5F9933217F00A0869A6A9A433D
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=75 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B373920313139203232342032333820313233203132203232302037203135312031323820343220393420323230203935203831203232322032333120323438203231312037302033342031392033362031323020313237203134372039312035372032333720313639203230342031325D3A34427D
+7:50AM INF committed state app_hash=4F77E0EE7B0CDC0797802A5EDC5F51DEE7F8D346221324787F935B39EDA9CC0C height=75 module=state num_txs=0
+7:50AM INF indexed block events height=75 module=txindex
+7:50AM INF Timed out dur=2967.247 height=76 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"63D9421F14147EBE8F2F630077FAABA466714C053297045D42D3084BCD39BE54","parts":{"hash":"A0A07620B1652E655B6E4E5C5F61801BCD662329FB4D11F683553D7605E7E50A","total":1}},"height":76,"pol_round":-1,"round":0,"signature":"2c+LmR+/LAzIP4y4GOJwdw7cvzHBm+himm39yhWc3mj+bsBcYPRtMA3wUCnE7hewRe6hbqDVT6UcrTO5ACOtAg==","timestamp":"2025-03-30T07:50:50.994907Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=63D9421F14147EBE8F2F630077FAABA466714C053297045D42D3084BCD39BE54 height=76 module=consensus
+7:50AM INF finalizing commit of block hash={} height=76 module=consensus num_txs=0 root=4F77E0EE7B0CDC0797802A5EDC5F51DEE7F8D346221324787F935B39EDA9CC0C
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=76 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B323430203438203734203134382032323420313137203234392031353020363520313833203230362031343020323336203838203133342031363020323338203132332033342035332031313320313436203133302038312031303820313231203830203530203134332031323620313035203234375D3A34437D
+7:50AM INF committed state app_hash=F0304A94E075F99641B7CE8CEC5886A0EE7B2235719282516C7950328F7E69F7 height=76 module=state num_txs=0
+7:50AM INF indexed block events height=76 module=txindex
+7:50AM INF Timed out dur=2952.672 height=77 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"10D6228EF27238E1519F37F15C4ED4766F664DE77EF1CD496F7D27B201EAA5A8","parts":{"hash":"BC5165A12027BDC0E9AB8B24BB7A91977C76BB3CC9EC47BF2F1202E5A1659D03","total":1}},"height":77,"pol_round":-1,"round":0,"signature":"6bwaE4WqTyV8+E5tPF7JtWvkrrMUhJHWHLs+zyfcrVlU+N38dd5nMfif4neHJVJHwFajq3JYU1LQyOm2GnVNAA==","timestamp":"2025-03-30T07:50:54.088643Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=10D6228EF27238E1519F37F15C4ED4766F664DE77EF1CD496F7D27B201EAA5A8 height=77 module=consensus
+7:50AM INF finalizing commit of block hash={} height=77 module=consensus num_txs=0 root=F0304A94E075F99641B7CE8CEC5886A0EE7B2235719282516C7950328F7E69F7
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=77 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B3136302031323720313430203139392035392032203133302033382031333020323331203138392031313520383920313520313439203134302038382031303720332035362034352031393120313237203135332031383220313839203538203139302031393420313234203831203131325D3A34447D
+7:50AM INF committed state app_hash=A07F8CC73B02822682E7BD73590F958C586B03382DBF7F99B6BD3ABEC27C5170 height=77 module=state num_txs=0
+7:50AM INF indexed block events height=77 module=txindex
+7:50AM INF Timed out dur=2967.693 height=78 module=consensus round=0 step=1
+7:50AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"34B50765D31754A7F557CA518824AAFC4225CA00470D106EFAC590916DDED48F","parts":{"hash":"869EB9A33E7FB5FC5560D31983F8F0888F1A160FD4D82D1A13920979A396E852","total":1}},"height":78,"pol_round":-1,"round":0,"signature":"ETBY17qKcjwcPN5vo4VAK0DDlqdr6APX2pWPmHLEViFc/5YDHM/Y/45MfMnAryJkQ5lMRl04hwABTZ8aFdxYCw==","timestamp":"2025-03-30T07:50:57.158615Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:50AM INF received complete proposal block hash=34B50765D31754A7F557CA518824AAFC4225CA00470D106EFAC590916DDED48F height=78 module=consensus
+7:50AM INF finalizing commit of block hash={} height=78 module=consensus num_txs=0 root=A07F8CC73B02822682E7BD73590F958C586B03382DBF7F99B6BD3ABEC27C5170
+7:50AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:50AM INF executed block height=78 module=state num_invalid_txs=0 num_valid_txs=0
+7:50AM INF commit synced commit=436F6D6D697449447B5B313836203135392039362034382031363220333220323233203134302031352039352034312031333820332039322038332038302032333420373320333820313636203530203433203338203230302035332037322031323720373820323531203638203135332034375D3A34457D
+7:50AM INF committed state app_hash=BA9F6030A220DF8C0F5F298A035C5350EA4926A6322B26C835487F4EFB44992F height=78 module=state num_txs=0
+7:50AM INF indexed block events height=78 module=txindex
+7:51AM INF Timed out dur=2962.238 height=79 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"35C5DFCD7AE01E1775E599E80F51CD6236CE218A85A308CEB772DC9ADF9FB00F","parts":{"hash":"B46F9CFC1C17CEDC1B5CBBF149090513FC646370C5007EA89813775C59C078DD","total":1}},"height":79,"pol_round":-1,"round":0,"signature":"sIgDEOmGihwWb2DrFTTOeviQqPLNjM6DtcQ3XPFHxVcfaiXN1vU0qhGRAXc5Btko9daTn0e173J0/MI4OQA+CQ==","timestamp":"2025-03-30T07:51:00.246776Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=35C5DFCD7AE01E1775E599E80F51CD6236CE218A85A308CEB772DC9ADF9FB00F height=79 module=consensus
+7:51AM INF finalizing commit of block hash={} height=79 module=consensus num_txs=0 root=BA9F6030A220DF8C0F5F298A035C5350EA4926A6322B26C835487F4EFB44992F
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=79 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B34392031383520313520323030203230372033203134322031373820313832203634203932203639203231312036302038352036352031383720313039203937203733203137342032323720313935203135322031303220313936203334203133362031333420313030203230203232365D3A34467D
+7:51AM INF committed state app_hash=31B90FC8CF038EB2B6405C45D33C5541BB6D6149AEE3C39866C42288866414E2 height=79 module=state num_txs=0
+7:51AM INF indexed block events height=79 module=txindex
+7:51AM INF Timed out dur=2966.882 height=80 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C450837D8B1D949FDBF16E6CD7DBE15DAE102586D7B38013990A96DE10D4FDC2","parts":{"hash":"1399CC688392831B22DE81987342C3AED5DBE8E92B05AF1F03D2147E731785F8","total":1}},"height":80,"pol_round":-1,"round":0,"signature":"V0Edh6flu/mXLcHcr7zu7zn4XdO73ohOkMWD9obvxg4KaxGw+CCYhIfBIBzfs+ATAXKSs6wi2aQsWkVDrIbSCw==","timestamp":"2025-03-30T07:51:03.332453Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=C450837D8B1D949FDBF16E6CD7DBE15DAE102586D7B38013990A96DE10D4FDC2 height=80 module=consensus
+7:51AM INF finalizing commit of block hash={} height=80 module=consensus num_txs=0 root=31B90FC8CF038EB2B6405C45D33C5541BB6D6149AEE3C39866C42288866414E2
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=80 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B313836203139372031353120323132203233342036382031313920313935203134302033302037203235312032332031393520393320362032313320352032303020313320313931203139372031393620393520313635203232302039302031303120313936203339203438203135345D3A35307D
+7:51AM INF committed state app_hash=BAC597D4EA4477C38C1E07FB17C35D06D505C80DBFC5C45FA5DC5A65C427309A height=80 module=state num_txs=0
+7:51AM INF indexed block events height=80 module=txindex
+7:51AM INF Timed out dur=2963.246 height=81 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"CA054097E115528DC7B7FC3DDBD93BBFA638B31CF23BDABB84B87D66BDECB554","parts":{"hash":"5255EA2EDF726E42D6CF3FF41AC4FB59CD69786610F00F3FE1588ADF691343E6","total":1}},"height":81,"pol_round":-1,"round":0,"signature":"0pyr422BHO4Kyk1XnQPbzlB4/I+8gJSIg+BjoLJgxMcZV3k3voLYbH30OriiwUfoSTLQKkUy66Dv+xPFnAaIBA==","timestamp":"2025-03-30T07:51:06.405155Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=CA054097E115528DC7B7FC3DDBD93BBFA638B31CF23BDABB84B87D66BDECB554 height=81 module=consensus
+7:51AM INF finalizing commit of block hash={} height=81 module=consensus num_txs=0 root=BAC597D4EA4477C38C1E07FB17C35D06D505C80DBFC5C45FA5DC5A65C427309A
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=81 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B3520313738203232322032343220313633203735203836203834203232362032312034302037362032323420313935203337203133352031363420313437203139392031353920363720313039203831203132352031303820323331203539203420313038203139382033372039365D3A35317D
+7:51AM INF committed state app_hash=05B2DEF2A34B5654E215284CE0C32587A493C79F436D517D6CE73B046CC62560 height=81 module=state num_txs=0
+7:51AM INF indexed block events height=81 module=txindex
+7:51AM INF Timed out dur=2961.293 height=82 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"FF516ECC93D260EFC39A6641E214DAF3F47DFACFB13DF1067F6E57787C8AD6A1","parts":{"hash":"C38A8F80FBCD575CD1ADE9BD381496094F706DE1B650D83543172443AD1C8055","total":1}},"height":82,"pol_round":-1,"round":0,"signature":"3NbE6LsQkoyITaUjkCheSUJH9HaByugPq9qdfUpn9c5SHTw9BsoO8dozNIHszKbQ8V+ZTtIh7/z6iuJ/kegQCQ==","timestamp":"2025-03-30T07:51:09.491859Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=FF516ECC93D260EFC39A6641E214DAF3F47DFACFB13DF1067F6E57787C8AD6A1 height=82 module=consensus
+7:51AM INF finalizing commit of block hash={} height=82 module=consensus num_txs=0 root=05B2DEF2A34B5654E215284CE0C32587A493C79F436D517D6CE73B046CC62560
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=82 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B313733203131382031343520353220313035203137362031333420343620383620323031203135362036372031373120313535203134332031373520323436203231203233372036302031303820313231203234352037362031303620323036203734203134362031303920333420313637203139355D3A35327D
+7:51AM INF committed state app_hash=AD76913469B0862E56C99C43AB9B8FAFF615ED3C6C79F54C6ACE4A926D22A7C3 height=82 module=state num_txs=0
+7:51AM INF indexed block events height=82 module=txindex
+7:51AM INF Timed out dur=2958.081 height=83 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"89B7A1CF1646F089851367003DE623EA65984F86B5D92F213EF2BFE4A56D9333","parts":{"hash":"48209D5C90F266B8C4E081BC26A69D1D4DE71B1D57B1B9E3A2857B844CF03D62","total":1}},"height":83,"pol_round":-1,"round":0,"signature":"Pb4QfLCyKkuVystZKOBrN1WTCdTqUE8SjgQluxyIlAvJBJZisa6iSF2UB6p03M3p4GoD4vfPhbojYOErVgTlDA==","timestamp":"2025-03-30T07:51:12.563179Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=89B7A1CF1646F089851367003DE623EA65984F86B5D92F213EF2BFE4A56D9333 height=83 module=consensus
+7:51AM INF finalizing commit of block hash={} height=83 module=consensus num_txs=0 root=AD76913469B0862E56C99C43AB9B8FAFF615ED3C6C79F54C6ACE4A926D22A7C3
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=83 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B313432203538203134203134352034352032343620322031313720323132203520373520323535203134372032323020363620313136203833203135312032342033302032313120323220313433203334203132362032303920323037203234382031332033322032392037305D3A35337D
+7:51AM INF committed state app_hash=8E3A0E912DF60275D4054BFF93DC42745397181ED3168F227ED1CFF80D201D46 height=83 module=state num_txs=0
+7:51AM INF indexed block events height=83 module=txindex
+7:51AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:51AM INF No addresses to dial. Falling back to seeds module=pex
+7:51AM INF Timed out dur=2962.216 height=84 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"94A5C949642C4D827DB7ACE109A021A93176F5709DB0216B9A1B8EA277741E44","parts":{"hash":"DF02388FEDD05FFCAF0A92E4E1E272B77D2CEAB731143418B0D26A0F8FA1D89A","total":1}},"height":84,"pol_round":-1,"round":0,"signature":"THfZoxo657ESrDTBkbVqJjS/nEa1E95a6GwfpDhNT66ayfDZA5sa+cyk/WjVgeAv6r2u7aHjat67vvmuGTKpCQ==","timestamp":"2025-03-30T07:51:15.645092Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=94A5C949642C4D827DB7ACE109A021A93176F5709DB0216B9A1B8EA277741E44 height=84 module=consensus
+7:51AM INF finalizing commit of block hash={} height=84 module=consensus num_txs=0 root=8E3A0E912DF60275D4054BFF93DC42745397181ED3168F227ED1CFF80D201D46
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=84 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B313936203130322031303820313432203136362033352031323920363620313135203133352031333920363920323038203831203134322032313620382031303520313732203138322031373120343220313938203138352036302032353220383120323334203533203231392036312033385D3A35347D
+7:51AM INF committed state app_hash=C4666C8EA623814273878B45D0518ED80869ACB6AB2AC6B93CFC51EA35DB3D26 height=84 module=state num_txs=0
+7:51AM INF indexed block events height=84 module=txindex
+7:51AM INF Timed out dur=2939.842 height=85 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"D728A05C10AE23583360B243597E5B4E655A4B83037E3A307BABB568A3792B2A","parts":{"hash":"B5DFD9388414EE12A527449BBCE4CCE666603117E0D9659AF1371E4E4459E83F","total":1}},"height":85,"pol_round":-1,"round":0,"signature":"BmvtpTmzQHMzk2ypk51vdVGViJ3z6x/Enr/uMn7/Gq17EGcQ7UDOndGqvRUvQzlpWZW8l2harLyCSTDbdDJIBg==","timestamp":"2025-03-30T07:51:18.717801Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=D728A05C10AE23583360B243597E5B4E655A4B83037E3A307BABB568A3792B2A height=85 module=consensus
+7:51AM INF finalizing commit of block hash={} height=85 module=consensus num_txs=0 root=C4666C8EA623814273878B45D0518ED80869ACB6AB2AC6B93CFC51EA35DB3D26
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=85 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B31333020313233203138362031302031383520323232203733203131382032323520313520313034203433203634203232312032323120313534203139342032333720323335203531203635203232322031363120313935203438203230362032323420313633203835203531203735203132365D3A35357D
+7:51AM INF committed state app_hash=827BBA0AB9DE4976E10F682B40DDDD9AC2EDEB3341DEA1C330CEE0A355334B7E height=85 module=state num_txs=0
+7:51AM INF indexed block events height=85 module=txindex
+7:51AM INF Timed out dur=2951.385 height=86 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C3888A3DACC553406331E0019B974C5E99A70AE580FBB3B6A28EB5D93F72E10E","parts":{"hash":"BE0B843017F68362D416BDEEA74B51C24068D040C2A46D11B2BFA1B91132DAB2","total":1}},"height":86,"pol_round":-1,"round":0,"signature":"2bbLRmvYG3UzOJAud6wEmTrYDqKpVsoTOSj61EX38pKnOkGG4WI43ifhcYYOSyx8iOkwUViDdOl8Aloy+yp8DQ==","timestamp":"2025-03-30T07:51:21.796907Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=C3888A3DACC553406331E0019B974C5E99A70AE580FBB3B6A28EB5D93F72E10E height=86 module=consensus
+7:51AM INF finalizing commit of block hash={} height=86 module=consensus num_txs=0 root=827BBA0AB9DE4976E10F682B40DDDD9AC2EDEB3341DEA1C330CEE0A355334B7E
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=86 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B313334203137302032343120382031343120363420313135203139203132352035332033382031393420313238203132342036382031343620313035203832203636203230352031302032313220313435203137372032313920323031203230352032303320353320313320323032203232365D3A35367D
+7:51AM INF committed state app_hash=86AAF1088D4073137D3526C2807C4492695242CD0AD491B1DBC9CDCB350DCAE2 height=86 module=state num_txs=0
+7:51AM INF indexed block events height=86 module=txindex
+7:51AM INF Timed out dur=2966.152 height=87 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BCE6C3881D1423A6069633B557C1BBCD6F3072D03CD8A7E7823E28A567CD2370","parts":{"hash":"9BD494F4483A9A93AD96DF5FB55B2E71BC85B9B66D4F60DF6FA22DFCA1C4AEE2","total":1}},"height":87,"pol_round":-1,"round":0,"signature":"dihB9dSckPzB8Eq36ybw2A6fAKv4ve/dk0fDpV6d7uE80SDZjrUAu3Kh9ZjdF8ydGSqfPqUAWqw7TcSRxvOADQ==","timestamp":"2025-03-30T07:51:24.888622Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=BCE6C3881D1423A6069633B557C1BBCD6F3072D03CD8A7E7823E28A567CD2370 height=87 module=consensus
+7:51AM INF finalizing commit of block hash={} height=87 module=consensus num_txs=0 root=86AAF1088D4073137D3526C2807C4492695242CD0AD491B1DBC9CDCB350DCAE2
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=87 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B363620393220313832203134322032353020313836203130372034302037322036372032313120313932203132362031362037342031373520323532203931203132312032343920323032203134302031323220353520383620313833203535203137362031383420383120313433203139375D3A35377D
+7:51AM INF committed state app_hash=425CB68EFABA6B284843D3C07E104AAFFC5B79F9CA8C7A3756B737B0B8518FC5 height=87 module=state num_txs=0
+7:51AM INF indexed block events height=87 module=txindex
+7:51AM INF Timed out dur=2967.655 height=88 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"8509CF1602EF71C2CC6B51F4C83003629C1878CB645452FE3956B885B1644EDC","parts":{"hash":"8CED47150E66CE181FBF668EB6BC482E8A38B697045135BAF07518C946A2BCD8","total":1}},"height":88,"pol_round":-1,"round":0,"signature":"h7rLt0+QgAn95CeoH+T6E/x3yv0WAA1E8SoQw3jgiwJn7xz0fY3WIGr1MTCIkabFI3CxPV9/LEQm7ohs0OE5BA==","timestamp":"2025-03-30T07:51:27.998047Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=8509CF1602EF71C2CC6B51F4C83003629C1878CB645452FE3956B885B1644EDC height=88 module=consensus
+7:51AM INF finalizing commit of block hash={} height=88 module=consensus num_txs=0 root=425CB68EFABA6B284843D3C07E104AAFFC5B79F9CA8C7A3756B737B0B8518FC5
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=88 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B3534203935203136352032313720323235203135392031323920313735203137312031363920323534203530203132352031353320323131203734203020323334203130203131312031333720313420313130203136352031343120313936203237203139392038332032303520323032203137375D3A35387D
+7:51AM INF committed state app_hash=365FA5D9E19F81AFABA9FE327D99D34A00EA0A6F890E6EA58DC41BC753CDCAB1 height=88 module=state num_txs=0
+7:51AM INF indexed block events height=88 module=txindex
+7:51AM INF Timed out dur=2924.407 height=89 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"369747419EAF6A9932817CE9FE19AD126AD6D95C63307F2999F22D0BCF4540A8","parts":{"hash":"942131D3D5AEFDB7F2B67825BF0E898D0E35BDA7324FE00B5BAE02B150CA0E9D","total":1}},"height":89,"pol_round":-1,"round":0,"signature":"hS54GFGrAPnqXEuanOAp/2GqyvxGSGCtupSsf12TnxhZRg2mPlBbYTVCg5JVIWu344zyuD1W0uMr+EGwbXO2BA==","timestamp":"2025-03-30T07:51:31.108925Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=369747419EAF6A9932817CE9FE19AD126AD6D95C63307F2999F22D0BCF4540A8 height=89 module=consensus
+7:51AM INF finalizing commit of block hash={} height=89 module=consensus num_txs=0 root=365FA5D9E19F81AFABA9FE327D99D34A00EA0A6F890E6EA58DC41BC753CDCAB1
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=89 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B3135372031332036352037372031393720313936203132342031383520323132203820323036203231372031393020313737203136362031383820313539203235342031323820343320373620323520313731203130362033382031363920323238203532203220313830203131362032395D3A35397D
+7:51AM INF committed state app_hash=9D0D414DC5C47CB9D408CED9BEB1A6BC9FFE802B4C19AB6A26A9E43402B4741D height=89 module=state num_txs=0
+7:51AM INF indexed block events height=89 module=txindex
+7:51AM INF Timed out dur=2942.2 height=90 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"03DB334712ECD93212A84FD742F920477AF1C3B38718841EBD5F0C37A72E4DC4","parts":{"hash":"76D226B5DFCDE04268409F30F5CF1C105675E16E13FDCFFE7A64C8D3322303A5","total":1}},"height":90,"pol_round":-1,"round":0,"signature":"Q7EXGx4pMBtagnkjrjwFT7jmtGkDK3Mi4U7BioEtMM8Rn/pA9LYwPzwCrtx99GyBkQ6IwhEqsr22UIaVj0npCQ==","timestamp":"2025-03-30T07:51:34.222624Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=03DB334712ECD93212A84FD742F920477AF1C3B38718841EBD5F0C37A72E4DC4 height=90 module=consensus
+7:51AM INF finalizing commit of block hash={} height=90 module=consensus num_txs=0 root=9D0D414DC5C47CB9D408CED9BEB1A6BC9FFE802B4C19AB6A26A9E43402B4741D
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=90 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B393420323435203137382031383520363120373520313239203734203131302031393120313639203332203234302036203132312031352036322036322032313020343820363720313633203232312032353520313131203130203437203235322032332031303220323035203234305D3A35417D
+7:51AM INF committed state app_hash=5EF5B2B93D4B814A6EBFA920F006790F3E3ED23043A3DDFF6F0A2FFC1766CDF0 height=90 module=state num_txs=0
+7:51AM INF indexed block events height=90 module=txindex
+7:51AM INF Timed out dur=2941.312 height=91 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BCA6B009E50F43D270F63A3DE81CD248721A442DC71BD1F848CDE0F58DFB74E9","parts":{"hash":"5B84DB15FC5A0579CB63B7CC0FED1E99DD431A76B30490F76703933BE1D6F671","total":1}},"height":91,"pol_round":-1,"round":0,"signature":"teg1sJAtphbcGIOShG1zP6LpytixLpw37XQLAi5mXxUuJo6DcUzs8eDc3WQ85MP8XxdTcGf6DipMtvYEibJgCQ==","timestamp":"2025-03-30T07:51:37.3374Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=BCA6B009E50F43D270F63A3DE81CD248721A442DC71BD1F848CDE0F58DFB74E9 height=91 module=consensus
+7:51AM INF finalizing commit of block hash={} height=91 module=consensus num_txs=0 root=5EF5B2B93D4B814A6EBFA920F006790F3E3ED23043A3DDFF6F0A2FFC1766CDF0
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=91 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B323530203136302032353320373820313620313337203130382037322031373720373120363720323339203334203234322031393920313531203231382031323820373220313520372038203130302032303520323532203139372035352032392031303520313036203230352039305D3A35427D
+7:51AM INF committed state app_hash=FAA0FD4E10896C48B14743EF22F2C797DA80480F070864CDFCC5371D696ACD5A height=91 module=state num_txs=0
+7:51AM INF indexed block events height=91 module=txindex
+7:51AM INF Timed out dur=2963.797 height=92 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"ED9F675946FBF10566025E056C137047F13AF4E6526E736D0160BD237018EF0D","parts":{"hash":"DF685A8177CDE8961B3EADC2215C91081E898EA4617B39845A77295CDF4F6F3C","total":1}},"height":92,"pol_round":-1,"round":0,"signature":"klmoe68SxKggR1QjclALxTWWrcT79QmsO1bH1xF8tXemvbkok3B2pjhoMYfL15LFYlPSc8vqaM/UhfS/GA7HAQ==","timestamp":"2025-03-30T07:51:40.444975Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=ED9F675946FBF10566025E056C137047F13AF4E6526E736D0160BD237018EF0D height=92 module=consensus
+7:51AM INF finalizing commit of block hash={} height=92 module=consensus num_txs=0 root=FAA0FD4E10896C48B14743EF22F2C797DA80480F070864CDFCC5371D696ACD5A
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=92 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B313420353120343020313234203230362038372031343820323037203234342039362032303220313433203136332031343620313839203134302032303520323130203230302032343120323338203435203833203139312031383620322031352031312031353620313638203634203233325D3A35437D
+7:51AM INF committed state app_hash=0E33287CCE5794CFF460CA8FA392BD8CCDD2C8F1EE2D53BFBA020F0B9CA840E8 height=92 module=state num_txs=0
+7:51AM INF indexed block events height=92 module=txindex
+7:51AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:51AM INF No addresses to dial. Falling back to seeds module=pex
+7:51AM INF Saving AddrBook to file book=/root/.chain-maind/config/addrbook.json module=p2p size=0
+7:51AM INF Timed out dur=2951.217 height=93 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"834302E66EF41DBA11D0919893A6AEB95904F71484FF52CA8F450B6A8098E41E","parts":{"hash":"BE961AF6C7FE767F4828C4DF2737277926195FBBA219994D1502E2804D4D779C","total":1}},"height":93,"pol_round":-1,"round":0,"signature":"Ck2+wycCyZOYcgV4qyuh+IRw/nEWOE7iQaB/4hOaFLKEKBAzgEuM/kLGv99kgdNlrN2BhFzpPfoq2AAEvtXXBQ==","timestamp":"2025-03-30T07:51:43.555257Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=834302E66EF41DBA11D0919893A6AEB95904F71484FF52CA8F450B6A8098E41E height=93 module=consensus
+7:51AM INF finalizing commit of block hash={} height=93 module=consensus num_txs=0 root=0E33287CCE5794CFF460CA8FA392BD8CCDD2C8F1EE2D53BFBA020F0B9CA840E8
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=93 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B353020313120323420323334203434203131392031383120323433203532203834203133372038342031333120313930203139352036372031393620323339203137362031383720323035203233302033382032313920332031343920313938203634203536203830203133392032385D3A35447D
+7:51AM INF committed state app_hash=320B18EA2C77B5F33454895483BEC343C4EFB0BBCDE626DB0395C64038508B1C height=93 module=state num_txs=0
+7:51AM INF indexed block events height=93 module=txindex
+7:51AM INF Timed out dur=2955.444 height=94 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"D14FB7992E93AE6D9024BF15A65DDDAC25AA1449D53748E3BDA3CFAADF8ACAC5","parts":{"hash":"AA6554E4F5FF6D3E50A0D93F9D8FA1B700D13176D4E8308D74AF5D1C3EB3200B","total":1}},"height":94,"pol_round":-1,"round":0,"signature":"Ddkm/dvylaC7CeitcSLgPhSOLXl9t68Ar9DaO/e9oOMDZ+zccij41jI3+HmFrzFRpQBwX+2l+U6E32ptbzVNAA==","timestamp":"2025-03-30T07:51:46.716289Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=D14FB7992E93AE6D9024BF15A65DDDAC25AA1449D53748E3BDA3CFAADF8ACAC5 height=94 module=consensus
+7:51AM INF finalizing commit of block hash={} height=94 module=consensus num_txs=0 root=320B18EA2C77B5F33454895483BEC343C4EFB0BBCDE626DB0395C64038508B1C
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=94 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B31373320323532203130372031343820313833203838203831203135322032313020313938203430203535203431203737203132332032303720363420393320363920323137203130332035203334203231362032352039332039203132372038322039382039302034355D3A35457D
+7:51AM INF committed state app_hash=ADFC6B94B7585198D2C62837294D7BCF405D45D9670522D8195D097F52625A2D height=94 module=state num_txs=0
+7:51AM INF indexed block events height=94 module=txindex
+7:51AM INF Timed out dur=2910.9 height=95 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"88EDB063656A58553F0601BBF15B40D842F81257C5E7ED948019DADE6AEDAE92","parts":{"hash":"FFB0005ECADD7A642D1074086E90AB810F86DAE92FD23B1FD63CA2E64C16992E","total":1}},"height":95,"pol_round":-1,"round":0,"signature":"Z+jrLh1oEgFHcAZYLurYPW/sTNkbJePPG1Md/6Xriwy5O95sNyJJTA1zqULw4W9AXOGofnh1LqpV8Zq8pCyBBw==","timestamp":"2025-03-30T07:51:49.811299Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=88EDB063656A58553F0601BBF15B40D842F81257C5E7ED948019DADE6AEDAE92 height=95 module=consensus
+7:51AM INF finalizing commit of block hash={} height=95 module=consensus num_txs=0 root=ADFC6B94B7585198D2C62837294D7BCF405D45D9670522D8195D097F52625A2D
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=95 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B333920313434203831203136352032323320323530203138362031313520383720323038203939203138203230362034322033352031303020313539203239203435203834203435203838203132392031323920313837203130392031333120313531203234203139382038352033385D3A35467D
+7:51AM INF committed state app_hash=279051A5DFFABA7357D06312CE2A23649F1D2D542D588181BB6D839718C65526 height=95 module=state num_txs=0
+7:51AM INF indexed block events height=95 module=txindex
+7:51AM INF Timed out dur=2963.048 height=96 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"6148115B425C0AD9E9C148AF7F7E174E8C3C90E646DB89338872EA8253E766FC","parts":{"hash":"E6AF6F8D2616465A2D8517B4E4CB18FD62C197AC9A6B4E53AB80A9852D85DD44","total":1}},"height":96,"pol_round":-1,"round":0,"signature":"FDouf79HAQYqvMl4MjFPqwpZYUqcM0OuDRrXiTmKoVLKTgjXYVq0o/O2jOPONlbW665wOdAmF1zHlOFozPXMBQ==","timestamp":"2025-03-30T07:51:52.94621Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=6148115B425C0AD9E9C148AF7F7E174E8C3C90E646DB89338872EA8253E766FC height=96 module=consensus
+7:51AM INF finalizing commit of block hash={} height=96 module=consensus num_txs=0 root=279051A5DFFABA7357D06312CE2A23649F1D2D542D588181BB6D839718C65526
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=96 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B343320313935203133203230392033302039312032333320313335203437203235302032303020313032203531203134342031363820313233203235203134312031313020313836203134372031333420313132203135302032303420323134203137352033302032333820333220313139203135395D3A36307D
+7:51AM INF committed state app_hash=2BC30DD11E5BE9872FFAC8663390A87B198D6EBA93867096CCD6AF1EEE20779F height=96 module=state num_txs=0
+7:51AM INF indexed block events height=96 module=txindex
+7:51AM INF Timed out dur=2958.014 height=97 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"713889404AF289420DF1617E764A93CBFDBBC80F599F1A38F0BC33D97D9F60BE","parts":{"hash":"2B7D52BA636C3831E478497F0F4743CA228C923D2DEF5C3D7B8BEC7AED3E1787","total":1}},"height":97,"pol_round":-1,"round":0,"signature":"VlW62/UmL9N3MiWTHbw26E+3gsYTH34BAhx4rxkdlboqc7aJ3GTLARePRJTpo+WeyTm9hI6XVDccP7kvps88AQ==","timestamp":"2025-03-30T07:51:56.010866Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=713889404AF289420DF1617E764A93CBFDBBC80F599F1A38F0BC33D97D9F60BE height=97 module=consensus
+7:51AM INF finalizing commit of block hash={} height=97 module=consensus num_txs=0 root=2BC30DD11E5BE9872FFAC8663390A87B198D6EBA93867096CCD6AF1EEE20779F
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=97 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B31323620313433203835203831203132352031383320393920323520393620313634203135312031392031343720323535203136322035362031363220323620343120313231203137342034312039302034302031333320383220363020313036203932203132322033203139315D3A36317D
+7:51AM INF committed state app_hash=7E8F55517DB7631960A4971393FFA238A21A2979AE295A2885523C6A5C7A03BF height=97 module=state num_txs=0
+7:51AM INF indexed block events height=97 module=txindex
+7:51AM INF Timed out dur=2946.844 height=98 module=consensus round=0 step=1
+7:51AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"037BA0A561AD3221E5F0D33C4A9D1DAF1F2F3220338410894F919CBE7CEB2F62","parts":{"hash":"3122092054FB41D48CFFDBF912F452678046B6E1604C2EC1AC1864D5EB680DF9","total":1}},"height":98,"pol_round":-1,"round":0,"signature":"77oi/LuDARtDNhewhc7EuD48DfcNHZPg1+LBS1nZ/2OHt0lN0QNz4Dxh1OjvIV3eZ9HKaqnhYCYV7HQwVPg3DQ==","timestamp":"2025-03-30T07:51:59.119331Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:51AM INF received complete proposal block hash=037BA0A561AD3221E5F0D33C4A9D1DAF1F2F3220338410894F919CBE7CEB2F62 height=98 module=consensus
+7:51AM INF finalizing commit of block hash={} height=98 module=consensus num_txs=0 root=7E8F55517DB7631960A4971393FFA238A21A2979AE295A2885523C6A5C7A03BF
+7:51AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:51AM INF executed block height=98 module=state num_invalid_txs=0 num_valid_txs=0
+7:51AM INF commit synced commit=436F6D6D697449447B5B3135312035362032343920373820313633203230322032352032353520383220313539203837203136312039332032343220323435203138392034392035372036203232332032323820313437203139392034352031393220323236203135332031373520313539203331203231392039305D3A36327D
+7:51AM INF committed state app_hash=9738F94EA3CA19FF529F57A15DF2F5BD313906DFE493C72DC0E299AF9F1FDB5A height=98 module=state num_txs=0
+7:51AM INF indexed block events height=98 module=txindex
+7:52AM INF Timed out dur=2945.046 height=99 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"69D4D9D3F2865E98A894A7D4B0CE3EDB50B8BFE1B00FEEDF06BC7138993A31E1","parts":{"hash":"FED39C169BF5C1D7D18CE0B46B9E113CEF4169A70E7911762D5C0C2694EF418D","total":1}},"height":99,"pol_round":-1,"round":0,"signature":"W17h4tmEsy8+U00KkcQ+jZZP44ZcOkhN92xgGF4u5zoTfwMHIDc1mYAYq784Cn/RtI8g8+JXxQBOFRTFGT09Aw==","timestamp":"2025-03-30T07:52:02.214245Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=69D4D9D3F2865E98A894A7D4B0CE3EDB50B8BFE1B00FEEDF06BC7138993A31E1 height=99 module=consensus
+7:52AM INF finalizing commit of block hash={} height=99 module=consensus num_txs=0 root=9738F94EA3CA19FF529F57A15DF2F5BD313906DFE493C72DC0E299AF9F1FDB5A
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=99 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B393420323231203638203235322031373520323038203139382034203239203133362031373920373620373920323237203134322031333420353720313233203136362032343720323420362032323120323339203132352032362037372036322032333520323031203139342031375D3A36337D
+7:52AM INF committed state app_hash=5EDD44FCAFD0C6041D88B34C4FE38E86397BA6F71806DDEF7D1A4D3EEBC9C211 height=99 module=state num_txs=0
+7:52AM INF indexed block events height=99 module=txindex
+7:52AM INF Timed out dur=2961.155 height=100 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"1E3B69AD983622AF82397CA0312D89732277ADC1264F15D1465BCE07454CD584","parts":{"hash":"C06DC4C0825ABC781B9FC681CB63F68ACB5672DFE33939AEF2A5B7009ED885E1","total":1}},"height":100,"pol_round":-1,"round":0,"signature":"MgkJnvJO/Po/wKgAT2vYERZ0HzUy1jXc+c+LkRv26SFLrq90RUoR60ti2BYHxd4wLuQxyn6GHJdbFONTFrKaBQ==","timestamp":"2025-03-30T07:52:05.337897Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=1E3B69AD983622AF82397CA0312D89732277ADC1264F15D1465BCE07454CD584 height=100 module=consensus
+7:52AM INF finalizing commit of block hash={} height=100 module=consensus num_txs=0 root=5EDD44FCAFD0C6041D88B34C4FE38E86397BA6F71806DDEF7D1A4D3EEBC9C211
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=100 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3131382039352035392035312034372031353820313133203232372031323220323532203132203232332032323220313135203136352032313520313136203234342031353720353020313937203230302031323320313120363220323332203135382033312031383320323530203230203235305D3A36347D
+7:52AM INF committed state app_hash=765F3B332F9E71E37AFC0CDFDE73A5D774F49D32C5C87B0B3EE89E1FB7FA14FA height=100 module=state num_txs=0
+7:52AM INF indexed block events height=100 module=txindex
+7:52AM INF Timed out dur=2948.251 height=101 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B936B19DB2CF4FBCD18DBCF11ABD997155B2D0BDB9FB6D29589B3480EAC740C7","parts":{"hash":"EFCCBC7A5B93C9E20AE104B18A1488E3E6981A6C9180EA7F905F95EAB807F442","total":1}},"height":101,"pol_round":-1,"round":0,"signature":"g9CUOwCxwRlj6o0/u2hHEQvoOCScJLLK9O8srFTu5bTsdYu6EOwXxJatkHZO31w04ZgqwmsaI2A4dn390jfmCw==","timestamp":"2025-03-30T07:52:08.422868Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=B936B19DB2CF4FBCD18DBCF11ABD997155B2D0BDB9FB6D29589B3480EAC740C7 height=101 module=consensus
+7:52AM INF finalizing commit of block hash={} height=101 module=consensus num_txs=0 root=765F3B332F9E71E37AFC0CDFDE73A5D774F49D32C5C87B0B3EE89E1FB7FA14FA
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=101 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B313333203738203938203134322031333320313834203231372031303020313731203232362034312039203138392032323520393720352038392037302031203633203133302032353520323038203130312032323420313335203139342031383420323720353120313138203232365D3A36357D
+7:52AM INF committed state app_hash=854E628E85B8D964ABE22909BDE161055946013F82FFD065E087C2B81B3376E2 height=101 module=state num_txs=0
+7:52AM INF indexed block events height=101 module=txindex
+7:52AM INF Timed out dur=2957.126 height=102 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"1E05DB279A7EB4797528E3E5DFD46C09A73A9CACA6D56352BD04356561036451","parts":{"hash":"8B17EA71FE741A9FD0FD67524B9671C92A109A125A145DA96AED6BF85AA80A0F","total":1}},"height":102,"pol_round":-1,"round":0,"signature":"y2sQ6YGFpyxO8GemVAqtqaoPs8RdA2U3RpIaZRBAMENnOUfB2PVsEkhcc590eCl6alBqf5ms1kDuuNpSOALZCQ==","timestamp":"2025-03-30T07:52:11.504898Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=1E05DB279A7EB4797528E3E5DFD46C09A73A9CACA6D56352BD04356561036451 height=102 module=consensus
+7:52AM INF finalizing commit of block hash={} height=102 module=consensus num_txs=0 root=854E628E85B8D964ABE22909BDE161055946013F82FFD065E087C2B81B3376E2
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=102 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B323331203230362036332034382031313820373220313334203637203136382031323420313439203139203136362032353520322032303120393320313539203139302039362031303220343520313532203237203139352039342032303320313632203139203437203435203139315D3A36367D
+7:52AM INF committed state app_hash=E7CE3F3076488643A87C9513A6FF02C95D9FBE60662D981BC35ECBA2132F2DBF height=102 module=state num_txs=0
+7:52AM INF indexed block events height=102 module=txindex
+7:52AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:52AM INF No addresses to dial. Falling back to seeds module=pex
+7:52AM INF Timed out dur=2943.467 height=103 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"41BE70A5724ED12B31C8B55972F2CAD26AAE18260900D79B355DA47A54571FF2","parts":{"hash":"701A18ED98B07A9F84C0BB2A219DC07EA2B3147AEDF2C11A83D76F1BD9AE5708","total":1}},"height":103,"pol_round":-1,"round":0,"signature":"0FY2dp/IoHNI9My5Tesk/VrKnxQ5Aj0ZZzeVNKHk+iGoh5Mt4dmZmet/sgEct7H+i8lS44ajXwvbi2wzFY/rCg==","timestamp":"2025-03-30T07:52:14.589447Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=41BE70A5724ED12B31C8B55972F2CAD26AAE18260900D79B355DA47A54571FF2 height=103 module=consensus
+7:52AM INF finalizing commit of block hash={} height=103 module=consensus num_txs=0 root=E7CE3F3076488643A87C9513A6FF02C95D9FBE60662D981BC35ECBA2132F2DBF
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=103 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3133332033203133362030203235203739203234302031313220323133203230332035372039392039322036372032362031333320313933203133332032313920333420323039203420393420313736203436203234352032313620363020343020323139203132203134325D3A36377D
+7:52AM INF committed state app_hash=85038800194FF070D5CB39635C431A85C185DB22D1045EB02EF5D83C28DB0C8E height=103 module=state num_txs=0
+7:52AM INF indexed block events height=103 module=txindex
+7:52AM INF Timed out dur=2955.943 height=104 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BCABA54363A90674E84E38243484CDAD67056206AD4FA9E97430A9205F2E40E2","parts":{"hash":"C22D5EA2D3E656F2E1172B15F310B3E4CCD1065F275C5A7294A3ADFCAE162DF6","total":1}},"height":104,"pol_round":-1,"round":0,"signature":"2O+CIVAKi1QebkFuzcDshZlZLpp4StAIpcRQyCLsgUudslf/l8arGAgtXCkUXH1arnyIj+TaZ+to/OCGtl27DQ==","timestamp":"2025-03-30T07:52:17.671731Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=BCABA54363A90674E84E38243484CDAD67056206AD4FA9E97430A9205F2E40E2 height=104 module=consensus
+7:52AM INF finalizing commit of block hash={} height=104 module=consensus num_txs=0 root=85038800194FF070D5CB39635C431A85C185DB22D1045EB02EF5D83C28DB0C8E
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=104 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B39203232362032203132312034362032313620353620313831203420353020343320383320393420313532203132203834203336203230332031333720313230203636203630203433203234322035302031383720323232203135312031363720353520323334203134375D3A36387D
+7:52AM INF committed state app_hash=09E202792ED838B504322B535E980C5424CB8978423C2BF232BBDE97A737EA93 height=104 module=state num_txs=0
+7:52AM INF indexed block events height=104 module=txindex
+7:52AM INF Timed out dur=2961.926 height=105 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5796B3E1A4788F86F47966F51496ACB279F46769E249240A5333548729765274","parts":{"hash":"4C4F670C642AC5076D9B3A2224484A4BA70289FFF9A86FAE587F38811F5F9F3D","total":1}},"height":105,"pol_round":-1,"round":0,"signature":"96I03Jw8LNbrKR09VNvqGJkQFDQAytEVipDF32UI4WME+eK9aZjKcrNrBglCNf2Y5tMHVPprsWRS3EL7NWi8AQ==","timestamp":"2025-03-30T07:52:20.755643Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=5796B3E1A4788F86F47966F51496ACB279F46769E249240A5333548729765274 height=105 module=consensus
+7:52AM INF finalizing commit of block hash={} height=105 module=consensus num_txs=0 root=09E202792ED838B504322B535E980C5424CB8978423C2BF232BBDE97A737EA93
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=105 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B31313420333820323439203132322037342031313320313120323039203231362031363020343020332032372031332032343320313734203639203130342031392034352031363120323131203630203233203537203134362031353720323120313033203731203737203234375D3A36397D
+7:52AM INF committed state app_hash=7226F97A4A710BD1D8A028031B0DF3AE4568132DA1D33C1739929D1567474DF7 height=105 module=state num_txs=0
+7:52AM INF indexed block events height=105 module=txindex
+7:52AM INF Timed out dur=2953.965 height=106 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"343D7C73FAC4F77B7E2D9450FB18399463DF0F2C1CC76C48558B872AF2BCA23F","parts":{"hash":"902C1E49B15FC4861CDAF20B5CFB68A8E45A820B1C993AC360E6189963A13A89","total":1}},"height":106,"pol_round":-1,"round":0,"signature":"UQ8mZM1EHgy0nl3wqR2jGjQfzu30bNiyX+zIW6GDsKp2kfOmCgRoS6i05ABrfEKEhFRpB3GagzoHCE5G0GE5CA==","timestamp":"2025-03-30T07:52:23.82172Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=343D7C73FAC4F77B7E2D9450FB18399463DF0F2C1CC76C48558B872AF2BCA23F height=106 module=consensus
+7:52AM INF finalizing commit of block hash={} height=106 module=consensus num_txs=0 root=7226F97A4A710BD1D8A028031B0DF3AE4568132DA1D33C1739929D1567474DF7
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=106 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B372033352031313120353720323234203133302031323820313331203134322032332031393420313433203231332031333320313636203234372031303920393220332031353220363420313137203639203536203834203134203130322031342031362031363820313437203234355D3A36417D
+7:52AM INF committed state app_hash=07236F39E08280838E17C28FD585A6F76D5C039840754538540E660E10A893F5 height=106 module=state num_txs=0
+7:52AM INF indexed block events height=106 module=txindex
+7:52AM INF Timed out dur=2963.102 height=107 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"7F4AF8094B7466DA92B25177E52C0F86EEC193BE10DA1EDFD8A8180A2517756C","parts":{"hash":"4A758CAFCD41C5E8DADEC8B52665737F7B09AE6D20E80F868C5DDFC5AFA6D43A","total":1}},"height":107,"pol_round":-1,"round":0,"signature":"Se4fJiKK2zm6wUXLBQilDpOUqQv74i+hX4eAgn634867SR0nKGblcHu8CH1swJNft/JZdruzmyHNvRY9S0TkBA==","timestamp":"2025-03-30T07:52:26.905977Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=7F4AF8094B7466DA92B25177E52C0F86EEC193BE10DA1EDFD8A8180A2517756C height=107 module=consensus
+7:52AM INF finalizing commit of block hash={} height=107 module=consensus num_txs=0 root=07236F39E08280838E17C28FD585A6F76D5C039840754538540E660E10A893F5
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=107 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B32302031393120382031363220313033203732203232322036342037332039203139352035203133302032322031303220383320313630203233322032312035392031323420313531203131312031353820313634203934203136382032323720323136203230392031352036395D3A36427D
+7:52AM INF committed state app_hash=14BF08A26748DE404909C30582166653A0E8153B7C976F9EA45EA8E3D8D10F45 height=107 module=state num_txs=0
+7:52AM INF indexed block events height=107 module=txindex
+7:52AM INF Timed out dur=2956.328 height=108 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C4348111D39FAFBDA3594293C648BC2EE3ED633132B23B3A0DFDC21141A8F231","parts":{"hash":"444808481F7758DD485B7BA32E66A286C90E4903C80EC1DA2F5FD2E1988738B9","total":1}},"height":108,"pol_round":-1,"round":0,"signature":"N/ytcbrJ2QoVnD02wAMt9lGYxQ394qMPx6h8HjsNBa2MBlEqYFlNYAky2YS6FUfupLsEtd0L8zjE+6uaqtD0AA==","timestamp":"2025-03-30T07:52:29.973112Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=C4348111D39FAFBDA3594293C648BC2EE3ED633132B23B3A0DFDC21141A8F231 height=108 module=consensus
+7:52AM INF finalizing commit of block hash={} height=108 module=consensus num_txs=0 root=14BF08A26748DE404909C30582166653A0E8153B7C976F9EA45EA8E3D8D10F45
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=108 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B31383720373920363420313137203230302033332031343720313038203130352035372031333620323335203934203920393720323437203231372032352031343520323820323220313539203234352032332031302038382031393720323336203639203632203236203137395D3A36437D
+7:52AM INF committed state app_hash=BB4F4075C821936C693988EB5E0961F7D919911C169FF5170A58C5EC453E1AB3 height=108 module=state num_txs=0
+7:52AM INF indexed block events height=108 module=txindex
+7:52AM INF Timed out dur=2966.86 height=109 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9B42D6DBAC0E1C91D563820A941F4D01B774A1E1F7D619EF84EAF77C6CA66EA7","parts":{"hash":"82A5E563939C51C5E72B08969411A5FDFB4DC409FD2DC49A4176F5D6CC3007F8","total":1}},"height":109,"pol_round":-1,"round":0,"signature":"W3q3EExyDJ+eKV/owkxIfevWE0OtH6qiYTV4KNRLzYQhVlVfvIAMh3g466K8HuJ1K0wp4YOdYOi1hIFkWdOTCA==","timestamp":"2025-03-30T07:52:33.053414Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=9B42D6DBAC0E1C91D563820A941F4D01B774A1E1F7D619EF84EAF77C6CA66EA7 height=109 module=consensus
+7:52AM INF finalizing commit of block hash={} height=109 module=consensus num_txs=0 root=BB4F4075C821936C693988EB5E0961F7D919911C169FF5170A58C5EC453E1AB3
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=109 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B31343220313832203538203234302031343020313431203230392038342032353520373520313130203232352034362031383820383320373020313320313636203135372039332031343420363820313634203233312038382032323520323335203739203139332031383520323138203235335D3A36447D
+7:52AM INF committed state app_hash=8EB63AF08C8DD154FF4B6EE12EBC53460DA69D5D9044A4E758E1EB4FC1B9DAFD height=109 module=state num_txs=0
+7:52AM INF indexed block events height=109 module=txindex
+7:52AM INF Timed out dur=2948.618 height=110 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E3ECA5A82060248DEA0783B4B2B77CB192888666CFB71E3D9A26518E0C90AECF","parts":{"hash":"925D4815F1F603AD5A386DD9F1AD38B5CB444480A6998CBDE09DB93695876DE3","total":1}},"height":110,"pol_round":-1,"round":0,"signature":"rH5NIGhX+g1A12o7bJHB7M0qQTO9l/xmtDWoXds18BKl/g5RfKK5sk66sOOEaM1h7ZZdjBZ9Q0IeKYCiOaRNDw==","timestamp":"2025-03-30T07:52:36.11918Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=E3ECA5A82060248DEA0783B4B2B77CB192888666CFB71E3D9A26518E0C90AECF height=110 module=consensus
+7:52AM INF finalizing commit of block hash={} height=110 module=consensus num_txs=0 root=8EB63AF08C8DD154FF4B6EE12EBC53460DA69D5D9044A4E758E1EB4FC1B9DAFD
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=110 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3137203235302031323720313838203131302032323020353420393820313934203335203232322039312031363920313336203231382031323520323535203634203730203239203233322033372031303220332031333620313937203735203520313336203234372032332036325D3A36457D
+7:52AM INF committed state app_hash=11FA7FBC6EDC3662C223DE5BA988DA7DFF40461DE825660388C54B0588F7173E height=110 module=state num_txs=0
+7:52AM INF indexed block events height=110 module=txindex
+7:52AM INF Timed out dur=2960.638 height=111 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"6F13CE67E543AE01FC6079F2E72EA8D759DA5CAB1650ABAE7EAB61DD374EDBE0","parts":{"hash":"EF7AD3FF0FFC5E414406A74E0CB1B8C65862A43BD4AAD2816C6948220E7CEB93","total":1}},"height":111,"pol_round":-1,"round":0,"signature":"edW2Tp7u0QNVKOiQIwTc8vhzGpG5L5RWRWYuhh5hy34zgVrO1c0SX7eQPS9Mx1dMzyB8uf8tx0d/Ih1GNH/8Aw==","timestamp":"2025-03-30T07:52:39.199698Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=6F13CE67E543AE01FC6079F2E72EA8D759DA5CAB1650ABAE7EAB61DD374EDBE0 height=111 module=consensus
+7:52AM INF finalizing commit of block hash={} height=111 module=consensus num_txs=0 root=11FA7FBC6EDC3662C223DE5BA988DA7DFF40461DE825660388C54B0588F7173E
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=111 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B323032203239203133312037203639203233342032323520393620393420313537203132332032353420313734203134332032323120313237203131302032323820363120313637203132332038302031373320323232203934203136352032303520323038203139203433203133302031395D3A36467D
+7:52AM INF committed state app_hash=CA1D830745EAE1605E9D7BFEAE8FDD7F6EE43DA77B50ADDE5EA5CDD0132B8213 height=111 module=state num_txs=0
+7:52AM INF indexed block events height=111 module=txindex
+7:52AM INF Timed out dur=2960.049 height=112 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"99F9A6DA1DFBEF9A63152806458A79B7960B448C8D1BB5CC64B02EF66A90AEE6","parts":{"hash":"868A56C982FE56E183106F9E185AC0538C498C7BFA4961C8312608C35710669D","total":1}},"height":112,"pol_round":-1,"round":0,"signature":"lWkroco/qBXXUD7VrYrFLQbQ8rw9C+KTippg4f/DLKUNZEh0SWAHKC1Ci9dR3zGJvFZCjCclO60M81fvaNHnAQ==","timestamp":"2025-03-30T07:52:42.267235Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=99F9A6DA1DFBEF9A63152806458A79B7960B448C8D1BB5CC64B02EF66A90AEE6 height=112 module=consensus
+7:52AM INF finalizing commit of block hash={} height=112 module=consensus num_txs=0 root=CA1D830745EAE1605E9D7BFEAE8FDD7F6EE43DA77B50ADDE5EA5CDD0132B8213
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=112 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3138302038332031343320352031383720343720313139203132352032302035302031372031393120393820323036203336203230203233322031323220323437203234322034392031373220313134203230322032313820323239203731203437203139382035322031372033305D3A37307D
+7:52AM INF committed state app_hash=B4538F05BB2F777D143211BF62CE2414E87AF7F231AC72CADAE5472FC634111E height=112 module=state num_txs=0
+7:52AM INF indexed block events height=112 module=txindex
+7:52AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=10
+7:52AM INF No addresses to dial. Falling back to seeds module=pex
+7:52AM INF Timed out dur=2956.711 height=113 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"D4562669E23F6BD84C60B36593986323C8E39FDC09CEF9A2A550B1417D5B5409","parts":{"hash":"CC56C75D0A2100F5D5B8B439C922C1C0DEC1422D54AE2763D75BF81922BF3068","total":1}},"height":113,"pol_round":-1,"round":0,"signature":"dLG+Gcqdp/eK3kKT/Tp6zQ8XasDk0/HdvaH8Gd8DmsxeC2BFDiipfawiZrTO4HC5ydbLvfHZ1mtUo4+DQoISDQ==","timestamp":"2025-03-30T07:52:45.354076Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=D4562669E23F6BD84C60B36593986323C8E39FDC09CEF9A2A550B1417D5B5409 height=113 module=consensus
+7:52AM INF finalizing commit of block hash={} height=113 module=consensus num_txs=0 root=B4538F05BB2F777D143211BF62CE2414E87AF7F231AC72CADAE5472FC634111E
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=113 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3234342033312032343020313637203636203131372032333320343420323820343520323232203230322037322033322036332037392031393920323334203235302032323620323430203139362034342031313920363320313135203133322035342031343320323120313030203136395D3A37317D
+7:52AM INF committed state app_hash=F41FF0A74275E92C1C2DDECA48203F4FC7EAFAE2F0C42C773F7384368F1564A9 height=113 module=state num_txs=0
+7:52AM INF indexed block events height=113 module=txindex
+7:52AM INF Timed out dur=2936.367 height=114 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"F74870EB46E7BD48B672F3C19D81316AEDF83315F319FE696DFB1F255CD3DB46","parts":{"hash":"BC5970727A8F548C47F66B15CA0E3B4E3998403D8629A07F72980DDDFC4B47F1","total":1}},"height":114,"pol_round":-1,"round":0,"signature":"jXsR+Li4oXsrzTVFiyX7eVzimDM8/2f1lTU6m/B6NGQSLSij8ulDyCkTLhmNoCuKPDIxq6R/xptB0wV8aUEAAg==","timestamp":"2025-03-30T07:52:48.418327Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=F74870EB46E7BD48B672F3C19D81316AEDF83315F319FE696DFB1F255CD3DB46 height=114 module=consensus
+7:52AM INF finalizing commit of block hash={} height=114 module=consensus num_txs=0 root=F41FF0A74275E92C1C2DDECA48203F4FC7EAFAE2F0C42C773F7384368F1564A9
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=114 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3838203435203131312031313920313639203138382031373020333620323438203731203235302039392031353920313332203139362032323520313939203130203137392032323420373220313333203137302034322033352031323220313720353620343020313331203132362035305D3A37327D
+7:52AM INF committed state app_hash=582D6F77A9BCAA24F847FA639F84C4E1C70AB3E04885AA2A237A113828837E32 height=114 module=state num_txs=0
+7:52AM INF indexed block events height=114 module=txindex
+7:52AM INF Timed out dur=2965.235 height=115 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4C7449A76D4E1F81D7A8AAE6B9E354EA44EBF3826FE5928CAF98B9379807EB53","parts":{"hash":"F7228BEB14B7B613EDAB512EDEABDB2F6412AC0B9947A9BA5E637CB5A50E8BDF","total":1}},"height":115,"pol_round":-1,"round":0,"signature":"IKi8gcx3X62KSAsH6J56UrYkIb1wD0bDU4mhQQEGZW3TFa64k/fJRgC7YxJz3z+1lNbQ3gudwCxWwmCCS5X/Cw==","timestamp":"2025-03-30T07:52:51.500388Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=4C7449A76D4E1F81D7A8AAE6B9E354EA44EBF3826FE5928CAF98B9379807EB53 height=115 module=consensus
+7:52AM INF finalizing commit of block hash={} height=115 module=consensus num_txs=0 root=582D6F77A9BCAA24F847FA639F84C4E1C70AB3E04885AA2A237A113828837E32
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=115 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3231302031373320313931203133322031353020323034203134312031383720372031303820313734203333203534203234332031323720313137203533203233302032313020313330203132322031313520313238203235342035352039362031393820313039203433203233352032203131385D3A37337D
+7:52AM INF committed state app_hash=D2ADBF8496CC8DBB076CAE2136F37F7535E6D2827A7380FE3760C66D2BEB0276 height=115 module=state num_txs=0
+7:52AM INF indexed block events height=115 module=txindex
+7:52AM INF Timed out dur=2939.27 height=116 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9DE7923DBECBC30EEE4859FE74B0669D703E415D76B8433D89D2056DD2AC2865","parts":{"hash":"54EA4A533AB7EE9FE659618DD4E9B65B49F227934455AA46A65D8DDBF20A19AD","total":1}},"height":116,"pol_round":-1,"round":0,"signature":"nEaRhxQ1DUMAbEd4Xpjp7NivePKcyiITOAhz1uyoxEqUO4WiDADsog7414eHSVZPb2je256krIEBQlp8W7LcAA==","timestamp":"2025-03-30T07:52:54.590062Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=9DE7923DBECBC30EEE4859FE74B0669D703E415D76B8433D89D2056DD2AC2865 height=116 module=consensus
+7:52AM INF finalizing commit of block hash={} height=116 module=consensus num_txs=0 root=D2ADBF8496CC8DBB076CAE2136F37F7535E6D2827A7380FE3760C66D2BEB0276
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=116 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3234362039203120323533203136382032303420313834203732203135342032333220323232203136372033372031392034362032312036312039312037362031313720363520322032303220323230203136203134322031343420373120392032323820313433203130365D3A37347D
+7:52AM INF committed state app_hash=F60901FDA8CCB8489AE8DEA725132E153D5B4C754102CADC108E904709E48F6A height=116 module=state num_txs=0
+7:52AM INF indexed block events height=116 module=txindex
+7:52AM INF Timed out dur=2964.176 height=117 module=consensus round=0 step=1
+7:52AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"2E4B42BAFB108A97DB16EB5D88EC1C5B46D428F7014D7895296318A841A7D3D9","parts":{"hash":"34D17D20FF384BA90AE6BEE0BF34F700BDE8E058C460E60A639E826FF3D685CA","total":1}},"height":117,"pol_round":-1,"round":0,"signature":"4uBXvgqXkGAJBpmo6ScXqMMJhLQKXjuCOlv2eJROKy55vtymo1hFdhR3lIVwkLZoS30EoTOBYCFDEtL2KXcUBQ==","timestamp":"2025-03-30T07:52:57.657585Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:52AM INF received complete proposal block hash=2E4B42BAFB108A97DB16EB5D88EC1C5B46D428F7014D7895296318A841A7D3D9 height=117 module=consensus
+7:52AM INF finalizing commit of block hash={} height=117 module=consensus num_txs=0 root=F60901FDA8CCB8489AE8DEA725132E153D5B4C754102CADC108E904709E48F6A
+7:52AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:52AM INF executed block height=117 module=state num_invalid_txs=0 num_valid_txs=0
+7:52AM INF commit synced commit=436F6D6D697449447B5B3633203432203232352031373720313020343220323434203133372038203130372032313120313120313032203136332035382031373520313530203132312031393720383920323430203235332031343820323337203135322031353420323433203139322032343620313336203431203139385D3A37357D
+7:52AM INF committed state app_hash=3F2AE1B10A2AF489086BD30B66A33AAF9679C559F0FD94ED989AF3C0F68829C6 height=117 module=state num_txs=0
+7:52AM INF indexed block events height=117 module=txindex
+7:53AM INF Timed out dur=2953.132 height=118 module=consensus round=0 step=1
+7:53AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5E244E31AB533C7D7B81B123509703FB0692D2069652829E8CD5B2542C6E4ED8","parts":{"hash":"BF86000EB60D3FEA740E173EC7829958D78DDA5E625225406D5C8209799ACDE1","total":1}},"height":118,"pol_round":-1,"round":0,"signature":"aWwJLNuHZCxh6V6upItt1NimgNoR8MSDPenh2cVyeUqaTwxr/wn0lZBuCtv4/VbxqMzbuywzTViiI8x2hQppBw==","timestamp":"2025-03-30T07:53:00.740035Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:53AM INF received complete proposal block hash=5E244E31AB533C7D7B81B123509703FB0692D2069652829E8CD5B2542C6E4ED8 height=118 module=consensus
+7:53AM INF finalizing commit of block hash={} height=118 module=consensus num_txs=0 root=3F2AE1B10A2AF489086BD30B66A33AAF9679C559F0FD94ED989AF3C0F68829C6
+7:53AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:53AM INF executed block height=118 module=state num_invalid_txs=0 num_valid_txs=0
+7:53AM INF commit synced commit=436F6D6D697449447B5B3231362031333620323137203136302038332032313820323034203134322031353220323232203134302032362038342031323320333620323336203232312031333820313134203235203235332032343520333920333020313035203020363220313135203632203435203136382037335D3A37367D
+7:53AM INF committed state app_hash=D888D9A053DACC8E98DE8C1A547B24ECDD8A7219FDF5271E69003E733E2DA849 height=118 module=state num_txs=0
+7:53AM INF indexed block events height=118 module=txindex
+7:53AM INF Timed out dur=2964.413 height=119 module=consensus round=0 step=1
+7:53AM INF received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4940EA4E9BB0F58902442C17127B9EF26ED8A76DB825AF165CB1B15AE0162C17","parts":{"hash":"FB0BAF3A1752701286F714112D05CD09B2FA3EA0A274297E8A075D181DEC9D4C","total":1}},"height":119,"pol_round":-1,"round":0,"signature":"kb7ZnlKsTb7DKIYsJG9hbwVFyqMnZHwpJQXRd5pxtY3jswDDIu1GXb133k/9zqY73c0zzAggWqNCS2fxi1ctDQ==","timestamp":"2025-03-30T07:53:03.811718Z"} proposer=728AB7EE44976959A3A69585A9D4E34E50CC7E63
+7:53AM INF received complete proposal block hash=4940EA4E9BB0F58902442C17127B9EF26ED8A76DB825AF165CB1B15AE0162C17 height=119 module=consensus
+7:53AM INF finalizing commit of block hash={} height=119 module=consensus num_txs=0 root=D888D9A053DACC8E98DE8C1A547B24ECDD8A7219FDF5271E69003E733E2DA849
+7:53AM INF minted coins from module account amount=20597basecro from=mint module=x/bank
+7:53AM INF executed block height=119 module=state num_invalid_txs=0 num_valid_txs=0
+7:53AM INF commit synced commit=436F6D6D697449447B5B37312036332031353620323320333020353820313037203135332039392032353120323337203138342031373820313239203132392031313120323235203138352031312031353220323437203734203336203138312031383220313539203132332031343820313236203135322036392032355D3A37377D
+7:53AM INF committed state app_hash=473F9C171E3A6B9963FBEDB8B281816FE1B90B98F74A24B5B69F7B947E984519 height=119 module=state num_txs=0
+7:53AM INF indexed block events height=119 module=txindex

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bc-challenge
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - image: crypto-validator:1.7
+        name: bc-challenge-node
+        resources:
+          limits:
+            cpu: "2"
+            memory: "8Gi"
+          requests:
+            cpu: "1"
+            memory: "2Gi"
+        ports:
+        - containerPort: 26657
+          name: rpc
+          protocol: TCP
+        - containerPort: 1317
+          name: api
+          protocol: TCP
+

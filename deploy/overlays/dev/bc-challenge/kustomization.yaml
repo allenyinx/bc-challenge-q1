@@ -1,0 +1,37 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  env: dev
+commonAnnotations:
+  pe/production: bc-challenge
+secretGenerator:
+- files:
+  - secrets/tls.key
+  - secrets/tls.crt
+  name: bc-cert-tls
+- files:
+  - secrets/.dockerconfigjson
+  name: bc-challenge-pull
+  type: kubernetes.io/dockerconfigjson
+generatorOptions:
+  disableNameSuffixHash: true
+
+patchesStrategicMerge:
+- patches/replica_patch.yaml
+- patches/pullSecrets_patch.yaml
+- patches/labels_patch.yaml
+- patches/volume_patch.yaml
+- patches/efs-patch.yaml
+resources:
+- namespace.yaml
+- ingress.yaml
+- deployment.yaml
+- service.yaml
+- pvc.yaml
+- ../../../base/bc-challenge
+
+
+images:
+- name: crypto-validator
+  newName: crypto-validator
+  newTag: 1.7

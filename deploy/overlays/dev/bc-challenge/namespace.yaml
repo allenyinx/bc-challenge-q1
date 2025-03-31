@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    app.kubernetes.io/instance: bc-challenge
+    app.kubernetes.io/name: bc-challenge
+    app.kubernetes.io/env: dev
+  name: bc-challenge-dev

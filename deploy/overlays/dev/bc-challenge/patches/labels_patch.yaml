@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bc-challenge
+  labels:
+    app: bc-challenge
+spec:
+  selector:
+    matchLabels:
+      app: bc-challenge
+  template:
+    metadata:
+      labels:
+        app: bc-challenge

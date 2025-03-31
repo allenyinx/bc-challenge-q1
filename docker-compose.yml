@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  node:
+    build: .
+    ports:
+      - "26657:26657"
+      - "1317:1317"
+    volumes:
+      - ./chain-data:/root/.chain-maind
