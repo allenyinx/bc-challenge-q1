@@ -1,6 +1,6 @@
 FROM ubuntu:22.04@sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2
 
-LABEL com.bcchalledge.version="0.0.1"
+LABEL com.bcchalledge.version="1.7"
 LABEL author="Allen Yin"
 LABEL com.bcchalledge.release-date="2025-03-31"
 
