@@ -22,4 +22,4 @@ then
     exit
 fi
 
-aws s3 sync ./chain-data s3://my-bucket/backups --region us-east-1
+#aws s3 sync ./chain-data s3://my-bucket/backups --region us-east-1
