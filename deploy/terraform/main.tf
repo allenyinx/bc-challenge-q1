@@ -1,3 +1,14 @@
+provider "aws" {
+  region = "us-west-2" # Choose the appropriate region
+  allowed_account_ids = ["123456789012"]  # Restrict to my AWS account
+  default_tags {
+    tags = {
+      Environment = "dev"
+      Terraform   = "true"
+    }
+  }
+}
+
 # EFS Filesystem
 resource "aws_efs_file_system" "chain_maind" {
   creation_token   = "chain-maind-efs"
@@ -5,12 +16,7 @@ resource "aws_efs_file_system" "chain_maind" {
   throughput_mode  = var.throughput_mode
   encrypted        = true
 
-  dynamic "provisioned_throughput_in_mibps" {
-    for_each = var.throughput_mode == "provisioned" ? [1] : []
-    content {
-      provisioned_throughput_in_mibps = var.provisioned_throughput
-    }
-  }
+  provisioned_throughput_in_mibps = var.throughput_mode == "provisioned" ? var.provisioned_throughput : null
 
   lifecycle_policy {
     transition_to_ia = "AFTER_30_DAYS"

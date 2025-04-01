@@ -7,7 +7,7 @@
 - Enable Load balancer for the service and enable ACLs to allow only the necessary IPs
 - Record all the network traffic and analyze it for any suspicious activity
 - Periodically scan the container images for any vulnerabilities
-- Periodically backup the efs data to s3 bucket
+- Periodically backup the efs data by setup backup plan
 
 ## design choices
 - Used kubernetes cluster as the deployment environment to declaratively manage the resources and scale the application
