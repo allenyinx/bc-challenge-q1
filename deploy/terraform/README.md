@@ -4,6 +4,12 @@ This module creates an AWS EFS filesystem.
 # References
 - [Terraform AWS EFS](https://github.com/terraform-aws-modules/terraform-aws-efs)
 
+# Pre-condition
+- EKS sg id: sg-12345678
+- EFS VPC created with id: vpc-12345678
+- EFS private subnets created with ids: subnet-123, subnet-456
+- EKS AWS efs provisioner plugin installed
+
 # Getting Started
 ```shell
 export AWS_ACCESS_KEY_ID="your_access_key"
