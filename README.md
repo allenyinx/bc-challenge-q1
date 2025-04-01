@@ -12,6 +12,7 @@
 ## design choices
 - Used kubernetes cluster as the deployment environment to declaratively manage the resources and scale the application
 - Used kustomize for managing the kubernetes manifests, to separate the environment specific configurations and reuse the common configurations
+- Used kustomize patches to manage the environment specific configurations and apply on demand
 
 # Deliverables location
 - deployment resources: stored in the `deploy` folder
